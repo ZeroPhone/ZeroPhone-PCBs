@@ -27,12 +27,22 @@ Problems and improvements:
 * Audio - put bypass caps on top side?
 * Audio - left channel and mic mixed up
 * Audio - jack footprint lack holes that the jack has plastic 
-* Display: shift a header?
+* Display: shift the top header?
 * Keypad layer: lower level button - footprint supporting both types of buttons
 * Keypad layer: lower level buttons too far from keypad edge, hard to press
-* Keypad layer: footprint not suitable for two-pin side buttons
+* Keypad layer: footprint not suitable for two-pin front buttons
 * Keypad layer: I2C and various voltages on one more header going to top right corner of keypad.
 * Keypad layer: make sure all pins are on 2.54 grid
 * Keypad layer: bring arrow keys closer
 * Keypad layer: add a test backlight
 * Wrong Pi Zero footprint (holes near headers are offset)
+
+Plan:
+
+1. Fix&modify front board footprints
+2. Fix the front board, send to people to eye-over
+3. Fix the keypad footprints
+4. Fix the keypad
+5. Fix&modify all other footprints
+6. Design the back board, send people to eye-over
+

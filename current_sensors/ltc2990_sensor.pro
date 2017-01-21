@@ -1,4 +1,4 @@
-update=19-Jan-17 15:22:59
+update=19-Jan-17 01:37:56
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,14 +20,14 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[general]
-version=1
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=../common_libs;libs
+LibDir=libs
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,8 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=libs/4P_RPi_AV_jack
-LibName31=libs/ESP8266
-LibName32=libs/switchable_header
-LibName33=keypad_overlay
-LibName34=pi0outline
+LibName30=libs/ltc299x
