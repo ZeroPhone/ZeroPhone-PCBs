@@ -1,4 +1,4 @@
-update=17-Jan-17 18:56:23
+update=23-Jan-17 21:53:52
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,3 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=keypad_overlay
