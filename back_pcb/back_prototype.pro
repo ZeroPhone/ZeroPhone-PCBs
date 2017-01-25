@@ -1,4 +1,4 @@
-update=17-Jan-17 18:48:13
+update=25-Jan-17 04:34:00
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=libs;../common_libs
+LibDir=../common_libs;libs
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,3 +58,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=pi0outline
+LibName31=libs/sim800_breakout
+LibName32=libs/mcp23017
+LibName33=libs/ds1307
