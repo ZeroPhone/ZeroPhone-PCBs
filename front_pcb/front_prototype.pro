@@ -1,4 +1,4 @@
-update=19-Jan-17 15:22:59
+update=26-Jan-17 05:30:09
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=libs/ESP8266
 LibName32=libs/switchable_header
 LibName33=keypad_overlay
 LibName34=pi0outline
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

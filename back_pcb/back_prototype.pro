@@ -1,4 +1,4 @@
-update=25-Jan-17 23:55:51
+update=26-Jan-17 04:06:36
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,13 @@ LibName30=pi0outline
 LibName31=libs/sim800_breakout
 LibName32=libs/mcp23017
 LibName33=libs/generic_rtc
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
