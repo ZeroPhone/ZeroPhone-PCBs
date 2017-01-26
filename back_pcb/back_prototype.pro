@@ -1,4 +1,4 @@
-update=25-Jan-17 04:34:00
+update=25-Jan-17 23:55:51
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,4 +61,4 @@ LibName29=valves
 LibName30=pi0outline
 LibName31=libs/sim800_breakout
 LibName32=libs/mcp23017
-LibName33=libs/ds1307
+LibName33=libs/generic_rtc

@@ -31,7 +31,7 @@ LIBS:valves
 LIBS:pi0outline
 LIBS:sim800_breakout
 LIBS:mcp23017
-LIBS:ds1307
+LIBS:generic_rtc
 LIBS:back_prototype-cache
 EELAYER 25 0
 EELAYER END
@@ -59,17 +59,6 @@ F 3 "" H 1500 4000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VPP #PWR08
-U 1 1 5843213D
-P 1400 4250
-F 0 "#PWR08" H 1400 4100 50  0001 C CNN
-F 1 "VPP" H 1400 4400 50  0000 C CNN
-F 2 "" H 1400 4250 50  0000 C CNN
-F 3 "" H 1400 4250 50  0000 C CNN
-	1    1400 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L TEST_1P W11
 U 1 1 5845A9D8
 P 1500 4350
@@ -86,7 +75,7 @@ L Pi0Top U1
 U 1 1 58407D79
 P 2100 5100
 F 0 "U1" H 1750 3400 60  0000 C CNN
-F 1 "Pi0Top" H 1850 6350 60  0000 C CNN
+F 1 "PI ZERO" H 1850 6350 60  0000 C CNN
 F 2 "common-footprints:pi0outline" H 2100 5100 60  0001 C CNN
 F 3 "" H 2100 5100 60  0001 C CNN
 	1    2100 5100
@@ -194,78 +183,78 @@ $EndComp
 $Comp
 L +3.3V #PWR031
 U 1 1 584853A6
-P 2350 7200
-F 0 "#PWR031" H 2350 7050 50  0001 C CNN
-F 1 "+3.3V" H 2350 7340 50  0000 C CNN
-F 2 "" H 2350 7200 50  0000 C CNN
-F 3 "" H 2350 7200 50  0000 C CNN
-	1    2350 7200
+P 1850 7200
+F 0 "#PWR031" H 1850 7050 50  0001 C CNN
+F 1 "+3.3V" H 1850 7340 50  0000 C CNN
+F 2 "" H 1850 7200 50  0000 C CNN
+F 3 "" H 1850 7200 50  0000 C CNN
+	1    1850 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C6
 U 1 1 58485760
-P 2050 7350
-F 0 "C6" H 2060 7420 50  0000 L CNN
-F 1 "C_Small" H 2060 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2050 7350 50  0001 C CNN
-F 3 "" H 2050 7350 50  0000 C CNN
-	1    2050 7350
+P 1550 7350
+F 0 "C6" H 1560 7420 50  0000 L CNN
+F 1 "C_Small" H 1560 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1550 7350 50  0001 C CNN
+F 3 "" H 1550 7350 50  0000 C CNN
+	1    1550 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR032
 U 1 1 58485D18
-P 2350 7500
-F 0 "#PWR032" H 2350 7250 50  0001 C CNN
-F 1 "GND" H 2350 7350 50  0000 C CNN
-F 2 "" H 2350 7500 50  0000 C CNN
-F 3 "" H 2350 7500 50  0000 C CNN
-	1    2350 7500
+P 1850 7500
+F 0 "#PWR032" H 1850 7250 50  0001 C CNN
+F 1 "GND" H 1850 7350 50  0000 C CNN
+F 2 "" H 1850 7500 50  0000 C CNN
+F 3 "" H 1850 7500 50  0000 C CNN
+	1    1850 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C5
 U 1 1 58485DA1
-P 1900 7350
-F 0 "C5" H 1910 7420 50  0000 L CNN
-F 1 "C_Small" H 1910 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1900 7350 50  0001 C CNN
-F 3 "" H 1900 7350 50  0000 C CNN
-	1    1900 7350
+P 1400 7350
+F 0 "C5" H 1410 7420 50  0000 L CNN
+F 1 "C_Small" H 1410 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1400 7350 50  0001 C CNN
+F 3 "" H 1400 7350 50  0000 C CNN
+	1    1400 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C4
 U 1 1 58485E32
-P 1750 7350
-F 0 "C4" H 1760 7420 50  0000 L CNN
-F 1 "C_Small" H 1760 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1750 7350 50  0001 C CNN
-F 3 "" H 1750 7350 50  0000 C CNN
-	1    1750 7350
+P 1250 7350
+F 0 "C4" H 1260 7420 50  0000 L CNN
+F 1 "C_Small" H 1260 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1250 7350 50  0001 C CNN
+F 3 "" H 1250 7350 50  0000 C CNN
+	1    1250 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C7
 U 1 1 58485EC6
-P 2200 7350
-F 0 "C7" H 2210 7420 50  0000 L CNN
-F 1 "C_Small" H 2210 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2200 7350 50  0001 C CNN
-F 3 "" H 2200 7350 50  0000 C CNN
-	1    2200 7350
+P 1700 7350
+F 0 "C7" H 1710 7420 50  0000 L CNN
+F 1 "C_Small" H 1710 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1700 7350 50  0001 C CNN
+F 3 "" H 1700 7350 50  0000 C CNN
+	1    1700 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C8
 U 1 1 58485F63
-P 2350 7350
-F 0 "C8" H 2360 7420 50  0000 L CNN
-F 1 "C_Small" H 2360 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2350 7350 50  0001 C CNN
-F 3 "" H 2350 7350 50  0000 C CNN
-	1    2350 7350
+P 1850 7350
+F 0 "C8" H 1860 7420 50  0000 L CNN
+F 1 "C_Small" H 1860 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1850 7350 50  0001 C CNN
+F 3 "" H 1850 7350 50  0000 C CNN
+	1    1850 7350
 	1    0    0    -1  
 $EndComp
 Text GLabel 3000 4000 2    60   Input ~ 0
@@ -294,58 +283,58 @@ F 3 "" H 3550 4350 50  0000 C CNN
 	1    3350 4350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4050 7200 2    60   Input ~ 0
+Text GLabel 3800 6950 2    60   Input ~ 0
 ATMEGA_ADC
 $Comp
 L GND #PWR034
 U 1 1 58835D1B
-P 4050 7600
-F 0 "#PWR034" H 4050 7350 50  0001 C CNN
-F 1 "GND" H 4050 7450 50  0000 C CNN
-F 2 "" H 4050 7600 50  0000 C CNN
-F 3 "" H 4050 7600 50  0000 C CNN
-	1    4050 7600
+P 3800 7350
+F 0 "#PWR034" H 3800 7100 50  0001 C CNN
+F 1 "GND" H 3800 7200 50  0000 C CNN
+F 2 "" H 3800 7350 50  0000 C CNN
+F 3 "" H 3800 7350 50  0000 C CNN
+	1    3800 7350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4050 7400 2    60   Input ~ 0
+Text GLabel 3800 7150 2    60   Input ~ 0
 ATMEGA_RXD
-Text GLabel 4050 7300 2    60   Input ~ 0
+Text GLabel 3800 7050 2    60   Input ~ 0
 ATMEGA_TXD
-Text GLabel 4050 7100 2    60   Input ~ 0
+Text GLabel 3800 6850 2    60   Input ~ 0
 ATMEGA_GPIO
-Text GLabel 4050 7500 2    60   Input ~ 0
+Text GLabel 3800 7250 2    60   Input ~ 0
 ATMEGA_RST
 $Comp
 L +3.3V #PWR035
 U 1 1 5883854F
-P 4050 7000
-F 0 "#PWR035" H 4050 6850 50  0001 C CNN
-F 1 "+3.3V" H 4050 7140 50  0000 C CNN
-F 2 "" H 4050 7000 50  0000 C CNN
-F 3 "" H 4050 7000 50  0000 C CNN
-	1    4050 7000
+P 3800 6750
+F 0 "#PWR035" H 3800 6600 50  0001 C CNN
+F 1 "+3.3V" H 3800 6890 50  0000 C CNN
+F 2 "" H 3800 6750 50  0000 C CNN
+F 3 "" H 3800 6750 50  0000 C CNN
+	1    3800 6750
 	0    1    1    0   
 $EndComp
 $Comp
 L C_Small C13
 U 1 1 5883ACC8
-P 2500 7350
-F 0 "C13" H 2510 7420 50  0000 L CNN
-F 1 "C_Small" H 2510 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2500 7350 50  0001 C CNN
-F 3 "" H 2500 7350 50  0000 C CNN
-	1    2500 7350
+P 2000 7350
+F 0 "C13" H 2010 7420 50  0000 L CNN
+F 1 "C_Small" H 2010 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2000 7350 50  0001 C CNN
+F 3 "" H 2000 7350 50  0000 C CNN
+	1    2000 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C14
 U 1 1 58840B61
-P 2650 7350
-F 0 "C14" H 2660 7420 50  0000 L CNN
-F 1 "C_Small" H 2660 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2650 7350 50  0001 C CNN
-F 3 "" H 2650 7350 50  0000 C CNN
-	1    2650 7350
+P 2150 7350
+F 0 "C14" H 2160 7420 50  0000 L CNN
+F 1 "C_Small" H 2160 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2150 7350 50  0001 C CNN
+F 3 "" H 2150 7350 50  0000 C CNN
+	1    2150 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -373,23 +362,23 @@ $EndComp
 $Comp
 L CONN_01X07 P6
 U 1 1 5886906B
-P 3850 7300
-F 0 "P6" H 3850 7700 50  0000 C CNN
-F 1 "CONN_01X07" V 3950 7300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 3850 7300 50  0001 C CNN
-F 3 "" H 3850 7300 50  0000 C CNN
-	1    3850 7300
+P 3600 7050
+F 0 "P6" H 3600 7450 50  0000 C CNN
+F 1 "ATMEGA_HEADER" V 3700 7050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 3600 7050 50  0001 C CNN
+F 3 "" H 3600 7050 50  0000 C CNN
+	1    3600 7050
 	-1   0    0    1   
 $EndComp
 $Comp
 L C_Small C15
 U 1 1 5883E9C6
-P 2800 7350
-F 0 "C15" H 2810 7420 50  0000 L CNN
-F 1 "C_Small" H 2810 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2800 7350 50  0001 C CNN
-F 3 "" H 2800 7350 50  0000 C CNN
-	1    2800 7350
+P 2300 7350
+F 0 "C15" H 2310 7420 50  0000 L CNN
+F 1 "C_Small" H 2310 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2300 7350 50  0001 C CNN
+F 3 "" H 2300 7350 50  0000 C CNN
+	1    2300 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -560,90 +549,13 @@ $EndComp
 $Comp
 L C_Small C25
 U 1 1 588645B8
-P 2950 7350
-F 0 "C25" H 2960 7420 50  0000 L CNN
-F 1 "C_Small" H 2960 7270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2950 7350 50  0001 C CNN
-F 3 "" H 2950 7350 50  0000 C CNN
-	1    2950 7350
+P 2450 7350
+F 0 "C25" H 2460 7420 50  0000 L CNN
+F 1 "C_Small" H 2460 7270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2450 7350 50  0001 C CNN
+F 3 "" H 2450 7350 50  0000 C CNN
+	1    2450 7350
 	1    0    0    -1  
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58882DE3
-P 3000 5050
-F 0 "W?" H 3000 5320 50  0000 C CNN
-F 1 "TEST_1P" H 3000 5250 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 5050 50  0001 C CNN
-F 3 "" H 3200 5050 50  0000 C CNN
-	1    3000 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58882E5A
-P 3000 4900
-F 0 "W?" H 3000 5170 50  0000 C CNN
-F 1 "TEST_1P" H 3000 5100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 4900 50  0001 C CNN
-F 3 "" H 3200 4900 50  0000 C CNN
-	1    3000 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58882ECA
-P 3000 4600
-F 0 "W?" H 3000 4870 50  0000 C CNN
-F 1 "TEST_1P" H 3000 4800 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 4600 50  0001 C CNN
-F 3 "" H 3200 4600 50  0000 C CNN
-	1    3000 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58882FC1
-P 3000 6250
-F 0 "W?" H 3000 6520 50  0000 C CNN
-F 1 "TEST_1P" H 3000 6450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 6250 50  0001 C CNN
-F 3 "" H 3200 6250 50  0000 C CNN
-	1    3000 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58883040
-P 3000 6350
-F 0 "W?" H 3000 6620 50  0000 C CNN
-F 1 "TEST_1P" H 3000 6550 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 6350 50  0001 C CNN
-F 3 "" H 3200 6350 50  0000 C CNN
-	1    3000 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58883160
-P 3000 6550
-F 0 "W?" H 3000 6820 50  0000 C CNN
-F 1 "TEST_1P" H 3000 6750 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 6550 50  0001 C CNN
-F 3 "" H 3200 6550 50  0000 C CNN
-	1    3000 6550
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 588834BC
-P 3000 6050
-F 0 "W?" H 3000 6320 50  0000 C CNN
-F 1 "TEST_1P" H 3000 6250 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 6050 50  0001 C CNN
-F 3 "" H 3200 6050 50  0000 C CNN
-	1    3000 6050
-	0    1    1    0   
 $EndComp
 $Comp
 L TEST_1P W?
@@ -656,18 +568,6 @@ F 3 "" H 1700 4800 50  0000 C CNN
 	1    1500 4800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L TEST_1P W?
-U 1 1 588835CB
-P 1500 4900
-F 0 "W?" H 1500 5170 50  0000 C CNN
-F 1 "TEST_1P" H 1500 5100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1700 4900 50  0001 C CNN
-F 3 "" H 1700 4900 50  0000 C CNN
-	1    1500 4900
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 3000 5150
 NoConn ~ 3000 5250
 NoConn ~ 3000 5350
 NoConn ~ 3000 5450
@@ -679,39 +579,6 @@ NoConn ~ 3000 5950
 NoConn ~ 3000 6150
 NoConn ~ 3000 6450
 NoConn ~ 3000 6650
-$Comp
-L TEST_1P W?
-U 1 1 58883AA2
-P 3000 4500
-F 0 "W?" H 3000 4770 50  0000 C CNN
-F 1 "TEST_1P" H 3000 4700 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 4500 50  0001 C CNN
-F 3 "" H 3200 4500 50  0000 C CNN
-	1    3000 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58883B27
-P 3000 4700
-F 0 "W?" H 3000 4970 50  0000 C CNN
-F 1 "TEST_1P" H 3000 4900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 4700 50  0001 C CNN
-F 3 "" H 3200 4700 50  0000 C CNN
-	1    3000 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W?
-U 1 1 58883BB5
-P 3000 4800
-F 0 "W?" H 3000 5070 50  0000 C CNN
-F 1 "TEST_1P" H 3000 5000 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3200 4800 50  0001 C CNN
-F 3 "" H 3200 4800 50  0000 C CNN
-	1    3000 4800
-	0    1    1    0   
-$EndComp
 NoConn ~ 1500 4650
 $Comp
 L TEST_1P W?
@@ -728,23 +595,12 @@ $Comp
 L SIM800_BREAKOUT U?
 U 1 1 588803A8
 P 2800 1250
-F 0 "U?" H 2500 800 60  0000 C CNN
+F 0 "U?" H 2750 900 60  0000 C CNN
 F 1 "SIM800_BREAKOUT" H 2750 1650 60  0000 C CNN
 F 2 "" H 2800 1250 60  0001 C CNN
 F 3 "" H 2800 1250 60  0001 C CNN
 	1    2800 1250
 	1    0    0    -1  
-$EndComp
-$Comp
-L VPP #PWR?
-U 1 1 58881021
-P 2250 1000
-F 0 "#PWR?" H 2250 850 50  0001 C CNN
-F 1 "VPP" H 2250 1150 50  0000 C CNN
-F 2 "" H 2250 1000 50  0000 C CNN
-F 3 "" H 2250 1000 50  0000 C CNN
-	1    2250 1000
-	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR?
@@ -996,55 +852,196 @@ MCP_INT
 $Comp
 L R R?
 U 1 1 58899B91
-P 5500 4800
-F 0 "R?" V 5580 4800 50  0000 C CNN
-F 1 "R" V 5500 4800 50  0000 C CNN
-F 2 "" V 5430 4800 50  0000 C CNN
-F 3 "" H 5500 4800 50  0000 C CNN
-	1    5500 4800
+P 4900 3450
+F 0 "R?" V 4980 3450 50  0000 C CNN
+F 1 "R" V 4900 3450 50  0000 C CNN
+F 2 "" V 4830 3450 50  0000 C CNN
+F 3 "" H 4900 3450 50  0000 C CNN
+	1    4900 3450
 	1    0    0    -1  
 $EndComp
 Text GLabel 5100 2300 0    60   Input ~ 0
 CHARGING_SENSE
-Text GLabel 5500 4650 0    60   Input ~ 0
+Text GLabel 4800 3250 0    60   Input ~ 0
 CHARGING_SENSE
 $Comp
 L R R?
 U 1 1 5889C4FD
-P 5500 4500
-F 0 "R?" V 5580 4500 50  0000 C CNN
-F 1 "R" V 5500 4500 50  0000 C CNN
-F 2 "" V 5430 4500 50  0000 C CNN
-F 3 "" H 5500 4500 50  0000 C CNN
-	1    5500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR?
-U 1 1 5889CB09
-P 5500 4350
-F 0 "#PWR?" H 5500 4200 50  0001 C CNN
-F 1 "+5V" H 5500 4490 50  0000 C CNN
-F 2 "" H 5500 4350 50  0000 C CNN
-F 3 "" H 5500 4350 50  0000 C CNN
-	1    5500 4350
+P 4900 3050
+F 0 "R?" V 4980 3050 50  0000 C CNN
+F 1 "R" V 4900 3050 50  0000 C CNN
+F 2 "" V 4830 3050 50  0000 C CNN
+F 3 "" H 4900 3050 50  0000 C CNN
+	1    4900 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5889CBBA
-P 5500 4950
-F 0 "#PWR?" H 5500 4700 50  0001 C CNN
-F 1 "GND" H 5500 4800 50  0000 C CNN
-F 2 "" H 5500 4950 50  0000 C CNN
-F 3 "" H 5500 4950 50  0000 C CNN
-	1    5500 4950
+P 4900 3600
+F 0 "#PWR?" H 4900 3350 50  0001 C CNN
+F 1 "GND" H 4900 3450 50  0000 C CNN
+F 2 "" H 4900 3600 50  0000 C CNN
+F 3 "" H 4900 3600 50  0000 C CNN
+	1    4900 3600
 	1    0    0    -1  
 $EndComp
-Connection ~ 2500 7450
-Connection ~ 2500 7250
-Connection ~ 2350 7450
-Connection ~ 2350 7250
+$Comp
+L Led_RGB_CA D?
+U 1 1 588A26C5
+P 9100 950
+F 0 "D?" H 9100 1300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9100 600 50  0000 C CNN
+F 2 "" H 9055 900 50  0000 C CNN
+F 3 "" H 9055 900 50  0000 C CNN
+	1    9100 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 1500 1    60   Input ~ 0
+NOTIF_LED_G
+Text GLabel 6500 1500 1    60   Input ~ 0
+NOTIF_LED_R
+Text GLabel 6900 1500 1    60   Input ~ 0
+NOTIF_LED_B
+Text GLabel 8600 950  0    60   Input ~ 0
+NOTIF_LED_G
+Text GLabel 8600 750  0    60   Input ~ 0
+NOTIF_LED_R
+Text GLabel 8600 1150 0    60   Input ~ 0
+NOTIF_LED_B
+$Comp
+L JUMPER3 JP?
+U 1 1 588A6E65
+P 9400 950
+F 0 "JP?" H 9450 850 50  0000 L CNN
+F 1 "JUMPER3" H 9400 1050 50  0000 C BNN
+F 2 "" H 9400 950 50  0000 C CNN
+F 3 "" H 9400 950 50  0000 C CNN
+	1    9400 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 588A7A47
+P 9400 1250
+F 0 "#PWR?" H 9400 1000 50  0001 C CNN
+F 1 "GND" H 9400 1100 50  0000 C CNN
+F 2 "" H 9400 1250 50  0000 C CNN
+F 3 "" H 9400 1250 50  0000 C CNN
+	1    9400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 588A7AF7
+P 9400 700
+F 0 "#PWR?" H 9400 550 50  0001 C CNN
+F 1 "+3.3V" H 9400 840 50  0000 C CNN
+F 2 "" H 9400 700 50  0000 C CNN
+F 3 "" H 9400 700 50  0000 C CNN
+	1    9400 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 588A9016
+P 8750 750
+F 0 "R?" V 8830 750 50  0000 C CNN
+F 1 "R" V 8750 750 50  0000 C CNN
+F 2 "" V 8680 750 50  0000 C CNN
+F 3 "" H 8750 750 50  0000 C CNN
+	1    8750 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 588A975A
+P 8750 950
+F 0 "R?" V 8830 950 50  0000 C CNN
+F 1 "R" V 8750 950 50  0000 C CNN
+F 2 "" V 8680 950 50  0000 C CNN
+F 3 "" H 8750 950 50  0000 C CNN
+	1    8750 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 588A9819
+P 8750 1150
+F 0 "R?" V 8830 1150 50  0000 C CNN
+F 1 "R" V 8750 1150 50  0000 C CNN
+F 2 "" V 8680 1150 50  0000 C CNN
+F 3 "" H 8750 1150 50  0000 C CNN
+	1    8750 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 588AB04C
+P 9050 1700
+F 0 "D?" H 9050 1800 50  0000 C CNN
+F 1 "LED" H 9050 1600 50  0000 C CNN
+F 2 "" H 9050 1700 50  0000 C CNN
+F 3 "" H 9050 1700 50  0000 C CNN
+	1    9050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L TEST_1P W?
+U 1 1 588AB5A2
+P 7450 1900
+F 0 "W?" H 7450 2170 50  0000 C CNN
+F 1 "TEST_1P" H 7450 2100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 7650 1900 50  0001 C CNN
+F 3 "" H 7650 1900 50  0000 C CNN
+	1    7450 1900
+	0    1    1    0   
+$EndComp
+Text GLabel 7350 1500 1    60   Input ~ 0
+FLASH_LED
+Text GLabel 8550 1700 0    60   Input ~ 0
+FLASH_LED
+$Comp
+L R R?
+U 1 1 588AC478
+P 8700 1700
+F 0 "R?" V 8780 1700 50  0000 C CNN
+F 1 "R" V 8700 1700 50  0000 C CNN
+F 2 "" V 8630 1700 50  0000 C CNN
+F 3 "" H 8700 1700 50  0000 C CNN
+	1    8700 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 588ACB82
+P 9250 1700
+F 0 "#PWR?" H 9250 1450 50  0001 C CNN
+F 1 "GND" H 9250 1550 50  0000 C CNN
+F 2 "" H 9250 1700 50  0000 C CNN
+F 3 "" H 9250 1700 50  0000 C CNN
+	1    9250 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RTC U?
+U 1 1 58892A07
+P 8500 2950
+F 0 "U?" H 8400 2700 60  0000 C CNN
+F 1 "RTC" H 8500 3200 60  0000 C CNN
+F 2 "" H 8500 2950 60  0001 C CNN
+F 3 "" H 8500 2950 60  0001 C CNN
+	1    8500 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 2900 2    60   Input ~ 0
+RTC_ALARM
+Text GLabel 5100 2200 0    60   Input ~ 0
+RTC_ALARM
+Connection ~ 2000 7450
+Connection ~ 2000 7250
+Connection ~ 1850 7450
+Connection ~ 1850 7250
 Wire Wire Line
 	2000 2900 2700 2900
 Wire Wire Line
@@ -1054,27 +1051,27 @@ Wire Wire Line
 Wire Wire Line
 	2000 2500 2700 2500
 Connection ~ 1500 4350
-Connection ~ 2200 7450
-Connection ~ 2050 7450
-Connection ~ 1900 7450
+Connection ~ 1700 7450
+Connection ~ 1550 7450
+Connection ~ 1400 7450
 Wire Wire Line
-	1750 7450 2950 7450
-Connection ~ 2200 7250
-Connection ~ 2050 7250
-Connection ~ 1900 7250
+	1250 7450 2450 7450
+Connection ~ 1700 7250
+Connection ~ 1550 7250
+Connection ~ 1400 7250
 Wire Wire Line
-	1750 7250 2950 7250
+	1250 7250 2450 7250
 Wire Wire Line
 	1500 4250 1400 4250
 Wire Wire Line
 	1500 4350 1500 4250
 Connection ~ 1500 4250
-Connection ~ 2650 7250
-Connection ~ 2650 7450
+Connection ~ 2150 7250
+Connection ~ 2150 7450
 Wire Wire Line
-	2350 7250 2350 7200
+	1850 7250 1850 7200
 Wire Wire Line
-	2350 7500 2350 7450
+	1850 7500 1850 7450
 Wire Wire Line
 	2200 2400 2200 2600
 Connection ~ 2200 2500
@@ -1117,8 +1114,8 @@ Connection ~ 2500 2500
 Wire Wire Line
 	2500 2800 2500 3000
 Connection ~ 2500 2900
-Connection ~ 2800 7250
-Connection ~ 2800 7450
+Connection ~ 2300 7250
+Connection ~ 2300 7450
 Wire Wire Line
 	3000 4250 3500 4250
 Connection ~ 3350 4250
@@ -1151,36 +1148,19 @@ Wire Wire Line
 	6100 3600 6150 3600
 Wire Wire Line
 	6150 3600 6150 3550
-Connection ~ 5500 4650
+Connection ~ 4900 3250
 Wire Wire Line
 	5750 3050 6150 3050
 Connection ~ 5950 3050
 Connection ~ 5850 3050
 Connection ~ 5750 3050
 Connection ~ 6150 3050
-$Comp
-L Led_RGB_CA D?
-U 1 1 588A26C5
-P 9100 1150
-F 0 "D?" H 9100 1500 50  0000 C CNN
-F 1 "Led_RGB_CA" H 9100 800 50  0000 C CNN
-F 2 "" H 9055 1100 50  0000 C CNN
-F 3 "" H 9055 1100 50  0000 C CNN
-	1    9100 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 1600 7000 1600
 Wire Wire Line
 	6350 1700 7000 1700
 Wire Wire Line
 	6350 1800 7000 1800
-Text GLabel 6700 1500 1    60   Input ~ 0
-NOTIF_LED_G
-Text GLabel 6500 1500 1    60   Input ~ 0
-NOTIF_LED_R
-Text GLabel 6900 1500 1    60   Input ~ 0
-NOTIF_LED_B
 Wire Wire Line
 	6900 1800 6900 1500
 Connection ~ 6900 1800
@@ -1190,129 +1170,622 @@ Connection ~ 6700 1700
 Wire Wire Line
 	6500 1600 6500 1500
 Connection ~ 6500 1600
-Text GLabel 8600 1150 0    60   Input ~ 0
-NOTIF_LED_G
-Text GLabel 8600 950  0    60   Input ~ 0
-NOTIF_LED_R
-Text GLabel 8600 1350 0    60   Input ~ 0
-NOTIF_LED_B
+Wire Wire Line
+	6350 1900 7450 1900
+Connection ~ 7350 1900
+Wire Wire Line
+	7350 1900 7350 1500
 $Comp
 L JUMPER3 JP?
-U 1 1 588A6E65
-P 9400 1150
-F 0 "JP?" H 9450 1050 50  0000 L CNN
-F 1 "JUMPER3" H 9400 1250 50  0000 C BNN
-F 2 "" H 9400 1150 50  0000 C CNN
-F 3 "" H 9400 1150 50  0000 C CNN
-	1    9400 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 588A7A47
-P 9400 1450
-F 0 "#PWR?" H 9400 1200 50  0001 C CNN
-F 1 "GND" H 9400 1300 50  0000 C CNN
-F 2 "" H 9400 1450 50  0000 C CNN
-F 3 "" H 9400 1450 50  0000 C CNN
-	1    9400 1450
+U 1 1 5889B58F
+P 9300 2300
+F 0 "JP?" H 9350 2200 50  0000 L CNN
+F 1 "JUMPER3" H 9300 2400 50  0000 C BNN
+F 2 "" H 9300 2300 50  0000 C CNN
+F 3 "" H 9300 2300 50  0000 C CNN
+	1    9300 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR?
-U 1 1 588A7AF7
-P 9400 900
-F 0 "#PWR?" H 9400 750 50  0001 C CNN
-F 1 "+3.3V" H 9400 1040 50  0000 C CNN
-F 2 "" H 9400 900 50  0000 C CNN
-F 3 "" H 9400 900 50  0000 C CNN
-	1    9400 900 
+U 1 1 5889BD0E
+P 8950 2200
+F 0 "#PWR?" H 8950 2050 50  0001 C CNN
+F 1 "+3.3V" H 8950 2340 50  0000 C CNN
+F 2 "" H 8950 2200 50  0000 C CNN
+F 3 "" H 8950 2200 50  0000 C CNN
+	1    8950 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
-U 1 1 588A9016
-P 8750 950
-F 0 "R?" V 8830 950 50  0000 C CNN
-F 1 "R" V 8750 950 50  0000 C CNN
-F 2 "" V 8680 950 50  0000 C CNN
-F 3 "" H 8750 950 50  0000 C CNN
-	1    8750 950 
+L +5V #PWR?
+U 1 1 5889BDD3
+P 9700 2200
+F 0 "#PWR?" H 9700 2050 50  0001 C CNN
+F 1 "+5V" H 9700 2340 50  0000 C CNN
+F 2 "" H 9700 2200 50  0000 C CNN
+F 3 "" H 9700 2200 50  0000 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2200 8900 2300
+Wire Wire Line
+	8900 2300 9050 2300
+Wire Wire Line
+	9550 2300 9700 2300
+Wire Wire Line
+	9700 2300 9700 2200
+Wire Wire Line
+	9300 2400 9300 2800
+Wire Wire Line
+	9300 2800 8950 2800
+$Comp
+L GND #PWR?
+U 1 1 5889CA2D
+P 8150 3100
+F 0 "#PWR?" H 8150 2850 50  0001 C CNN
+F 1 "GND" H 8150 2950 50  0000 C CNN
+F 2 "" H 8150 3100 50  0000 C CNN
+F 3 "" H 8150 3100 50  0000 C CNN
+	1    8150 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
-U 1 1 588A975A
-P 8750 1150
-F 0 "R?" V 8830 1150 50  0000 C CNN
-F 1 "R" V 8750 1150 50  0000 C CNN
-F 2 "" V 8680 1150 50  0000 C CNN
-F 3 "" H 8750 1150 50  0000 C CNN
-	1    8750 1150
+L Crystal_Small Y?
+U 1 1 5889CF50
+P 7700 2850
+F 0 "Y?" H 7700 2950 50  0000 C CNN
+F 1 "Crystal_Small" H 7700 2750 50  0000 C CNN
+F 2 "" H 7700 2850 50  0000 C CNN
+F 3 "" H 7700 2850 50  0000 C CNN
+	1    7700 2850
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7700 2750 7850 2750
+Wire Wire Line
+	7850 2750 7850 2800
+Wire Wire Line
+	7700 2950 7850 2950
+Wire Wire Line
+	7850 2950 7850 2900
+Text GLabel 10000 2200 1    60   Input ~ 0
+SCL
 $Comp
-L R R?
-U 1 1 588A9819
-P 8750 1350
-F 0 "R?" V 8830 1350 50  0000 C CNN
-F 1 "R" V 8750 1350 50  0000 C CNN
-F 2 "" V 8680 1350 50  0000 C CNN
-F 3 "" H 8750 1350 50  0000 C CNN
-	1    8750 1350
-	0    1    1    0   
+L Jumper_NC_Small JP?
+U 1 1 5889F087
+P 9900 2550
+F 0 "JP?" H 9900 2630 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9910 2490 50  0001 C CNN
+F 2 "" H 9900 2550 50  0000 C CNN
+F 3 "" H 9900 2550 50  0000 C CNN
+	1    9900 2550
+	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D?
-U 1 1 588AB04C
-P 9100 1950
-F 0 "D?" H 9100 2050 50  0000 C CNN
-F 1 "LED" H 9100 1850 50  0000 C CNN
-F 2 "" H 9100 1950 50  0000 C CNN
-F 3 "" H 9100 1950 50  0000 C CNN
-	1    9100 1950
+L Jumper_NC_Small JP?
+U 1 1 5889F18E
+P 10600 2550
+F 0 "JP?" H 10600 2630 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 10610 2490 50  0001 C CNN
+F 2 "" H 10600 2550 50  0000 C CNN
+F 3 "" H 10600 2550 50  0000 C CNN
+	1    10600 2550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10700 2200 1    60   Input ~ 0
+SDA
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 5889F372
+P 10800 2550
+F 0 "Q?" H 11100 2600 50  0000 R CNN
+F 1 "Q_NMOS_GSD" H 11450 2500 50  0000 R CNN
+F 2 "" H 11000 2650 50  0000 C CNN
+F 3 "" H 10800 2550 50  0000 C CNN
+	1    10800 2550
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_1P W?
-U 1 1 588AB5A2
-P 7450 1900
-F 0 "W?" H 7450 2170 50  0000 C CNN
-F 1 "TEST_1P" H 7450 2100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 7650 1900 50  0001 C CNN
-F 3 "" H 7650 1900 50  0000 C CNN
-	1    7450 1900
-	0    1    1    0   
+L Q_NMOS_GSD Q?
+U 1 1 5889F625
+P 10100 2550
+F 0 "Q?" H 10400 2600 50  0000 R CNN
+F 1 "Q_NMOS_GSD" H 10750 2500 50  0000 R CNN
+F 2 "" H 10300 2650 50  0000 C CNN
+F 3 "" H 10100 2550 50  0000 C CNN
+	1    10100 2550
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6350 1900 7450 1900
-Text GLabel 7350 1500 1    60   Input ~ 0
-FLASH_LED
-Connection ~ 7350 1900
+	10000 3000 10000 2750
 Wire Wire Line
-	7350 1900 7350 1500
-Text GLabel 8600 1950 0    60   Input ~ 0
-FLASH_LED
+	9900 2650 9900 2750
+Wire Wire Line
+	9900 2750 10000 2750
+Wire Wire Line
+	9900 2450 9900 2350
+Wire Wire Line
+	9900 2350 10000 2350
+Wire Wire Line
+	10000 2350 10000 2200
+Wire Wire Line
+	10700 2200 10700 2350
+Wire Wire Line
+	10600 2450 10600 2350
+Wire Wire Line
+	10600 2350 10700 2350
+Wire Wire Line
+	10600 2650 10600 2750
+Wire Wire Line
+	10600 2750 10700 2750
+Wire Wire Line
+	10700 2750 10700 3100
+Connection ~ 10000 2350
+Connection ~ 10000 2750
+Connection ~ 10700 2750
+Connection ~ 10700 2350
 $Comp
-L R R?
-U 1 1 588AC478
-P 8750 1950
-F 0 "R?" V 8830 1950 50  0000 C CNN
-F 1 "R" V 8750 1950 50  0000 C CNN
-F 2 "" V 8680 1950 50  0000 C CNN
-F 3 "" H 8750 1950 50  0000 C CNN
-	1    8750 1950
-	0    1    1    0   
+L GND #PWR?
+U 1 1 588A1CB1
+P 10300 2550
+F 0 "#PWR?" H 10300 2300 50  0001 C CNN
+F 1 "GND" H 10300 2400 50  0000 C CNN
+F 2 "" H 10300 2550 50  0000 C CNN
+F 3 "" H 10300 2550 50  0000 C CNN
+	1    10300 2550
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR?
-U 1 1 588ACB82
-P 9300 1950
-F 0 "#PWR?" H 9300 1700 50  0001 C CNN
-F 1 "GND" H 9300 1800 50  0000 C CNN
-F 2 "" H 9300 1950 50  0000 C CNN
-F 3 "" H 9300 1950 50  0000 C CNN
-	1    9300 1950
+U 1 1 588A1D85
+P 11000 2550
+F 0 "#PWR?" H 11000 2300 50  0001 C CNN
+F 1 "GND" H 11000 2400 50  0000 C CNN
+F 2 "" H 11000 2550 50  0000 C CNN
+F 3 "" H 11000 2550 50  0000 C CNN
+	1    11000 2550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	8950 3000 10000 3000
+Wire Wire Line
+	10700 3100 8950 3100
+Wire Wire Line
+	4800 3250 4900 3250
+Wire Wire Line
+	4900 3200 4900 3300
+$Comp
+L USB_A P?
+U 1 1 588A9EDA
+P 10750 3900
+F 0 "P?" H 10950 3700 50  0000 C CNN
+F 1 "USB_A" H 10700 4100 50  0000 C CNN
+F 2 "" V 10700 3800 50  0000 C CNN
+F 3 "" V 10700 3800 50  0000 C CNN
+	1    10750 3900
+	0    1    1    0   
+$EndComp
+NoConn ~ 10850 4200
+$Comp
+L +5V #PWR?
+U 1 1 588AAE8B
+P 10450 3700
+F 0 "#PWR?" H 10450 3550 50  0001 C CNN
+F 1 "+5V" H 10450 3840 50  0000 C CNN
+F 2 "" H 10450 3700 50  0000 C CNN
+F 3 "" H 10450 3700 50  0000 C CNN
+	1    10450 3700
+	0    -1   -1   0   
+$EndComp
+Text Notes 5200 4200 0    60   ~ 0
+The address pins are interconnected\nto make a default address \n(tracks can be cut and replaced with\nsolder jumpers for custom address)
+Text GLabel 10450 4450 0    60   Input ~ 0
+USB_D-
+Text GLabel 10450 4550 0    60   Input ~ 0
+USB_D+
+$Comp
+L GND #PWR?
+U 1 1 588B0B0E
+P 10450 4000
+F 0 "#PWR?" H 10450 3750 50  0001 C CNN
+F 1 "GND" H 10450 3850 50  0000 C CNN
+F 2 "" H 10450 4000 50  0000 C CNN
+F 3 "" H 10450 4000 50  0000 C CNN
+	1    10450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP?
+U 1 1 588B1D7A
+P 1950 1000
+F 0 "JP?" H 1950 1150 50  0000 C CNN
+F 1 "JUMPER" H 1950 920 50  0000 C CNN
+F 2 "" H 1950 1000 50  0000 C CNN
+F 3 "" H 1950 1000 50  0000 C CNN
+	1    1950 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 700  800  0    60   ~ 0
+There's a NC jumper to disconnect GSM modem from VBAT if needed,\nto allow using the GSM modem with another power supply \nattached separately if VBAT is set to be 5V.
+Wire Wire Line
+	2250 1000 1650 1000
+Connection ~ 1650 1000
+Connection ~ 2250 1000
+$Comp
+L TEST_1P W?
+U 1 1 588B5AFB
+P 2250 1400
+F 0 "W?" H 2250 1670 50  0000 C CNN
+F 1 "TEST_1P" H 2250 1600 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 2450 1400 50  0001 C CNN
+F 3 "" H 2450 1400 50  0000 C CNN
+	1    2250 1400
+	-1   0    0    1   
+$EndComp
+Connection ~ 2250 1400
+Text Notes 600  3800 0    60   ~ 0
+While ID_SC is polled by GPU before Linux boots, \nit should be safe to connect it to MCP interrupt output \nbecause both are open-collector when GPU is using\nthis pin for I2C (for HAT detection).
+Text Notes 3550 7700 0    60   ~ 0
+A header that can be used to program the ATMega - \nor to extend the capabilities of the phone, if necessary.
+Text Notes 9600 1100 0    60   ~ 0
+A nice notification LED footprint -\nallowing both common-cathode\nand common-anode LEDs,\nwhatever's handy.
+Text Notes 9600 1850 0    60   ~ 0
+A LED that can be used \nas a flashlight \n(or camera flash LED)
+Text Notes 7750 3500 0    60   ~ 0
+This RTC footprint supports both 3.3V and 5V RTCs\n(with level shifting footprints for the latter case,\nby default level shifting is disabled with jumpers.)
+Text Notes 4500 850  0    60   ~ 0
+MCP23017 is a cheap way to get more GPIOs for RPi,\nand it has kernel drivers and Raspberry Pi Device Tree blobs,\nso it can appear as native Linux GPIOs.
+Text Notes 3800 3650 0    60   ~ 0
+A resistor divider\nto sense when charger \nis plugged in.
+Text Notes 10050 4300 0    60   ~ 0
+Full-sized USB \nfemale socket
+Text Notes 700  3150 0    60   ~ 0
+Audio filtering.\nIs optional but solves \nproblems with GSM noise\naffecting audio.
+Wire Wire Line
+	7850 2900 8150 2900
+Wire Wire Line
+	7850 2800 8150 2800
+$Comp
+L TEST_1P W?
+U 1 1 588DC349
+P 10450 4550
+F 0 "W?" H 10450 4820 50  0000 C CNN
+F 1 "TEST_1P" H 10450 4750 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 10650 4550 50  0001 C CNN
+F 3 "" H 10650 4550 50  0000 C CNN
+	1    10450 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W?
+U 1 1 588DC34F
+P 10450 4450
+F 0 "W?" H 10450 4720 50  0000 C CNN
+F 1 "TEST_1P" H 10450 4650 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 10650 4450 50  0001 C CNN
+F 3 "" H 10650 4450 50  0000 C CNN
+	1    10450 4450
+	0    1    1    0   
+$EndComp
+Text Notes 10050 5000 0    60   ~ 0
+Near hole in the board\nto solder wires to \nPi USB testpoints
+Text GLabel 10450 3800 0    60   Input ~ 0
+USB_D-
+Text GLabel 10450 3900 0    60   Input ~ 0
+USB_D+
+Text Notes 550  1900 0    60   ~ 0
+All the SIM800 signals available on the breakout are connected to GPIOs.\nThe SIM800 library is not yet complete, and it's unclear\nwhat pins we'll actually need, so I'm staying safe.
+Text GLabel 3000 4500 2    60   Input ~ 0
+MOSI
+Text GLabel 3000 4600 2    60   Input ~ 0
+MISO
+Text GLabel 3000 4700 2    60   Input ~ 0
+SCK
+Text GLabel 3000 4900 2    60   Input ~ 0
+CS
+Text GLabel 6500 5450 0    60   Input ~ 0
+MOSI
+Text GLabel 6500 5550 0    60   Input ~ 0
+MISO
+Text GLabel 6500 5650 0    60   Input ~ 0
+SCK
+Text GLabel 6500 5750 0    60   Input ~ 0
+CS
+NoConn ~ 3000 4800
+$Comp
+L +3.3V #PWR?
+U 1 1 58896BBB
+P 6500 5250
+F 0 "#PWR?" H 6500 5100 50  0001 C CNN
+F 1 "+3.3V" H 6500 5390 50  0000 C CNN
+F 2 "" H 6500 5250 50  0000 C CNN
+F 3 "" H 6500 5250 50  0000 C CNN
+	1    6500 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58896C98
+P 6500 5350
+F 0 "#PWR?" H 6500 5100 50  0001 C CNN
+F 1 "GND" H 6500 5200 50  0000 C CNN
+F 2 "" H 6500 5350 50  0000 C CNN
+F 3 "" H 6500 5350 50  0000 C CNN
+	1    6500 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W?
+U 1 1 58882DE3
+P 3200 5050
+F 0 "W?" H 3200 5320 50  0000 C CNN
+F 1 "TEST_1P" H 3200 5250 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3400 5050 50  0001 C CNN
+F 3 "" H 3400 5050 50  0000 C CNN
+	1    3200 5050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3000 5150
+Wire Wire Line
+	3000 5050 3300 5050
+Text GLabel 3300 5050 2    60   Input ~ 0
+IR_TX
+Connection ~ 3200 5050
+$Comp
+L TEST_1P W?
+U 1 1 58899EB9
+P 3200 6050
+F 0 "W?" H 3200 6320 50  0000 C CNN
+F 1 "TEST_1P" H 3200 6250 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3400 6050 50  0001 C CNN
+F 3 "" H 3400 6050 50  0000 C CNN
+	1    3200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6050 3300 6050
+Text GLabel 3300 6050 2    60   Input ~ 0
+IR_RX
+Connection ~ 3200 6050
+$Comp
+L CONN_01X05 P?
+U 1 1 5889AF0B
+P 10700 5700
+F 0 "P?" H 10700 6000 50  0000 C CNN
+F 1 "EXPANSION_TOP" V 10800 5700 50  0000 C CNN
+F 2 "" H 10700 5700 50  0000 C CNN
+F 3 "" H 10700 5700 50  0000 C CNN
+	1    10700 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 5800 0    60   Input ~ 0
+IR_RX
+Text GLabel 10500 5700 0    60   Input ~ 0
+IR_TX
+$Comp
+L GND #PWR?
+U 1 1 5889B2EB
+P 10500 5900
+F 0 "#PWR?" H 10500 5650 50  0001 C CNN
+F 1 "GND" H 10500 5750 50  0000 C CNN
+F 2 "" H 10500 5900 50  0000 C CNN
+F 3 "" H 10500 5900 50  0000 C CNN
+	1    10500 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5889B3C8
+P 10500 5600
+F 0 "#PWR?" H 10500 5450 50  0001 C CNN
+F 1 "+3.3V" H 10500 5740 50  0000 C CNN
+F 2 "" H 10500 5600 50  0000 C CNN
+F 3 "" H 10500 5600 50  0000 C CNN
+	1    10500 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5889B879
+P 10500 5500
+F 0 "#PWR?" H 10500 5350 50  0001 C CNN
+F 1 "+5V" H 10500 5640 50  0000 C CNN
+F 2 "" H 10500 5500 50  0000 C CNN
+F 3 "" H 10500 5500 50  0000 C CNN
+	1    10500 5500
+	0    -1   -1   0   
+$EndComp
+Text Notes 10100 6450 0    60   ~ 0
+Header with 2 GPIOs\nfor IR receiver \nor transmitter\n(or anything else)
+$Comp
+L CONN_01X06 P?
+U 1 1 588A25B0
+P 6650 7050
+F 0 "P?" H 6650 7400 50  0000 C CNN
+F 1 "EXPANSION_BOTTOM" V 6750 7050 50  0000 C CNN
+F 2 "" H 6650 7050 50  0000 C CNN
+F 3 "" H 6650 7050 50  0000 C CNN
+	1    6650 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 7200 0    60   Input ~ 0
+SCL
+Text GLabel 3000 6550 2    60   Input ~ 0
+BH_GPIO
+Text GLabel 6450 7300 0    60   Input ~ 0
+BH_GPIO
+$Comp
+L +3.3V #PWR?
+U 1 1 588A4D8B
+P 6450 6900
+F 0 "#PWR?" H 6450 6750 50  0001 C CNN
+F 1 "+3.3V" H 6450 7040 50  0000 C CNN
+F 2 "" H 6450 6900 50  0000 C CNN
+F 3 "" H 6450 6900 50  0000 C CNN
+	1    6450 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 588A4E65
+P 6450 7000
+F 0 "#PWR?" H 6450 6750 50  0001 C CNN
+F 1 "GND" H 6450 6850 50  0000 C CNN
+F 2 "" H 6450 7000 50  0000 C CNN
+F 3 "" H 6450 7000 50  0000 C CNN
+	1    6450 7000
+	0    1    1    0   
+$EndComp
+Text GLabel 6450 6800 0    60   Input ~ 0
+ATMEGA_ADC
+Text GLabel 6450 7100 0    60   Input ~ 0
+SDA
+Wire Notes Line
+	3350 7800 3350 6650
+Wire Notes Line
+	3350 6650 6950 6650
+Wire Notes Line
+	4550 5150 4550 7500
+Wire Notes Line
+	4550 7500 6950 7500
+Text Notes 4700 7250 0    60   ~ 0
+Small header with I2C, \none GPIO and one ADC. \nCan be useful for small \nanalog and I2C sensors.
+Wire Notes Line
+	11200 3500 9950 3500
+Wire Notes Line
+	9950 3500 9950 6550
+Wire Notes Line
+	9950 5200 11200 5200
+Text GLabel 1500 4900 0    60   Input ~ 0
+TV_OUT
+Text GLabel 6500 6250 0    60   Input ~ 0
+TV_OUT
+$Comp
+L +5V #PWR?
+U 1 1 588AAD12
+P 6500 6350
+F 0 "#PWR?" H 6500 6200 50  0001 C CNN
+F 1 "+5V" H 6500 6490 50  0000 C CNN
+F 2 "" H 6500 6350 50  0000 C CNN
+F 3 "" H 6500 6350 50  0000 C CNN
+	1    6500 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 588AC994
+P 6500 6150
+F 0 "#PWR?" H 6500 5900 50  0001 C CNN
+F 1 "GND" H 6500 6000 50  0000 C CNN
+F 2 "" H 6500 6150 50  0000 C CNN
+F 3 "" H 6500 6150 50  0000 C CNN
+	1    6500 6150
+	0    1    1    0   
+$EndComp
+Text GLabel 3000 6250 2    60   Input ~ 0
+LH_GPIO_1
+Text GLabel 3000 6350 2    60   Input ~ 0
+LH_GPIO_2
+Text GLabel 6500 5850 0    60   Input ~ 0
+LH_GPIO_1
+Text GLabel 6500 5950 0    60   Input ~ 0
+LH_GPIO_2
+Text Notes 4650 6100 0    60   ~ 0
+Big expansion header with SPI,\n2 GPIOs, various voltages\nand analog video out.\nAlso has 5V charger input,\nVBAT and 5V_OUT.
+$Comp
+L CONN_01X13 P?
+U 1 1 588AFF09
+P 6700 5850
+F 0 "P?" H 6700 6550 50  0000 C CNN
+F 1 "EXPANSION_LEFT" V 6800 5850 50  0000 C CNN
+F 2 "" H 6700 5850 50  0000 C CNN
+F 3 "" H 6700 5850 50  0000 C CNN
+	1    6700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 588B095E
+P 6500 6050
+F 0 "#PWR?" H 6500 5900 50  0001 C CNN
+F 1 "VDD" H 6500 6200 50  0000 C CNN
+F 2 "" H 6500 6050 50  0000 C CNN
+F 3 "" H 6500 6050 50  0000 C CNN
+	1    6500 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 588B0A36
+P 4900 2900
+F 0 "#PWR?" H 4900 2750 50  0001 C CNN
+F 1 "VDD" H 4900 3050 50  0000 C CNN
+F 2 "" H 4900 2900 50  0000 C CNN
+F 3 "" H 4900 2900 50  0000 C CNN
+	1    4900 2900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4550 5150 6950 5150
+Wire Notes Line
+	6950 5150 6950 6650
+Wire Notes Line
+	550  7000 3350 7000
+$Comp
+L +BATT #PWR?
+U 1 1 588B792F
+P 1400 4250
+F 0 "#PWR?" H 1400 4100 50  0001 C CNN
+F 1 "+BATT" H 1400 4390 50  0000 C CNN
+F 2 "" H 1400 4250 50  0000 C CNN
+F 3 "" H 1400 4250 50  0000 C CNN
+	1    1400 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 588B81CE
+P 1650 1000
+F 0 "#PWR?" H 1650 850 50  0001 C CNN
+F 1 "+BATT" H 1650 1140 50  0000 C CNN
+F 2 "" H 1650 1000 50  0000 C CNN
+F 3 "" H 1650 1000 50  0000 C CNN
+	1    1650 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 588B91E0
+P 6500 6450
+F 0 "#PWR?" H 6500 6300 50  0001 C CNN
+F 1 "+BATT" H 6500 6590 50  0000 C CNN
+F 2 "" H 6500 6450 50  0000 C CNN
+F 3 "" H 6500 6450 50  0000 C CNN
+	1    6500 6450
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	500  1950 4100 1950
+Wire Notes Line
+	4100 500  4100 2950
+Wire Notes Line
+	500  3400 3750 3400
+Wire Notes Line
+	3750 2950 3750 3950
+Wire Notes Line
+	4100 2950 3750 2950
+Wire Notes Line
+	4100 2650 5100 2650
+Wire Notes Line
+	5100 2650 5100 3950
+Wire Notes Line
+	5100 3950 3750 3950
+Wire Notes Line
+	7900 500  7900 1900
+Wire Notes Line
+	7900 1500 11150 1500
+Wire Notes Line
+	7900 1900 11150 1900
 $EndSCHEMATC
