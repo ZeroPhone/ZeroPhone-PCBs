@@ -1,4 +1,4 @@
-update=26-Jan-17 04:06:36
+update=31-Jan-17 06:51:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 [cvpcb]
 version=1
 NetIExt=net
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../common_libs;libs
@@ -62,13 +72,6 @@ LibName30=pi0outline
 LibName31=libs/sim800_breakout
 LibName32=libs/mcp23017
 LibName33=libs/generic_rtc
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName34=references
+LibName35=libs/tp4056_breakout
+LibName36=libs/dc_dc_breakout
