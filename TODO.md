@@ -36,13 +36,3 @@ Problems and improvements:
 * Keypad layer: bring arrow keys closer
 * Keypad layer: add a test backlight
 * Wrong Pi Zero footprint (holes near headers are offset)
-
-Plan:
-
-1. Fix&modify front board footprints
-2. Fix the front board, send to people to eye-over
-3. Fix the keypad footprints
-4. Fix the keypad
-5. Fix&modify all other footprints
-6. Design the back board, send people to eye-over
-
