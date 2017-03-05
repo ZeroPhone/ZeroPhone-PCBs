@@ -1746,4 +1746,6 @@ Text Notes 7150 2700 0    60   ~ 0
 Crapload of capacitors. They're cheap \nand you're buying multiple anyway. \n\n        Experiencing glitches? \n        Just add capacitors!
 Text Notes 5950 3250 0    60   ~ 0
 All Mega SPI pins are available\non headers in case you screw up\nreally, really bad.
+Text Notes 7950 4550 0    60   ~ 0
+(the Chinese crystals\nalso have built-in caps)
 $EndSCHEMATC
