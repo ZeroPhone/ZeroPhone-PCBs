@@ -764,13 +764,12 @@ L GND #PWR025
 U 1 1 588960B2
 P 5700 950
 F 0 "#PWR025" H 5700 700 50  0001 C CNN
-F 1 "GND" H 5550 900 50  0000 C CNN
+F 1 "GND" H 5700 800 50  0000 C CNN
 F 2 "" H 5700 950 50  0000 C CNN
 F 3 "" H 5700 950 50  0000 C CNN
 	1    5700 950 
 	-1   0    0    1   
 $EndComp
-NoConn ~ 5800 950 
 NoConn ~ 5900 950 
 NoConn ~ 6000 950 
 Text GLabel 5150 2050 0    60   Input ~ 0
@@ -925,7 +924,7 @@ F 3 "" H 8900 2950 60  0001 C CNN
 $EndComp
 Text GLabel 9350 2900 2    60   Input ~ 0
 RTC_ALARM
-Text GLabel 4300 1850 1    60   Input ~ 0
+Text GLabel 4250 1050 2    60   Input ~ 0
 RTC_ALARM
 $Comp
 L JUMPER3 JP7
@@ -1095,13 +1094,13 @@ $EndComp
 $Comp
 L JUMPER JP2
 U 1 1 588B1D7A
-P 4850 1850
-F 0 "JP2" H 4850 2000 50  0000 C CNN
-F 1 "JUMPER" H 4850 1770 50  0000 C CNN
-F 2 "Connect:GS2" H 4850 1850 50  0001 C CNN
-F 3 "" H 4850 1850 50  0000 C CNN
-	1    4850 1850
-	1    0    0    -1  
+P 4250 1450
+F 0 "JP2" H 4250 1500 50  0000 C CNN
+F 1 "JUMPER" H 4250 1370 50  0000 C CNN
+F 2 "Connect:GS2" H 4250 1450 50  0001 C CNN
+F 3 "" H 4250 1450 50  0000 C CNN
+	1    4250 1450
+	0    -1   -1   0   
 $EndComp
 Text Notes 700  800  0    60   ~ 0
 There's a NC jumper to disconnect GSM modem from VBAT if needed,\nto allow using the GSM modem with another power supply \nattached separately if VBAT is set to be 5V.
@@ -1910,8 +1909,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 2500 7450 2350
 Wire Wire Line
-	4300 1850 4550 1850
-Wire Wire Line
 	950  4100 950  4000
 Connection ~ 950  4000
 Connection ~ 1650 1000
@@ -2159,28 +2156,28 @@ Wire Wire Line
 Wire Wire Line
 	700  7250 850  7250
 Connection ~ 800  7250
-Text GLabel 6750 1000 0    60   Input ~ 0
+Text GLabel 6950 700  0    60   Input ~ 0
 MCP_INT
 $Comp
 L R R11
 U 1 1 58914037
-P 6900 1000
-F 0 "R11" V 6980 1000 50  0000 C CNN
-F 1 "10K" V 6900 1000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 1000 50  0001 C CNN
-F 3 "" H 6900 1000 50  0000 C CNN
-	1    6900 1000
+P 7100 700
+F 0 "R11" V 7180 700 50  0000 C CNN
+F 1 "10K" V 7100 700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 700 50  0001 C CNN
+F 3 "" H 7100 700 50  0000 C CNN
+	1    7100 700 
 	0    1    1    0   
 $EndComp
 $Comp
 L +3.3V #PWR068
 U 1 1 58914166
-P 7050 1000
-F 0 "#PWR068" H 7050 850 50  0001 C CNN
-F 1 "+3.3V" H 7200 1100 50  0000 C CNN
-F 2 "" H 7050 1000 50  0000 C CNN
-F 3 "" H 7050 1000 50  0000 C CNN
-	1    7050 1000
+P 7400 700
+F 0 "#PWR068" H 7400 550 50  0001 C CNN
+F 1 "+3.3V" H 7550 800 50  0000 C CNN
+F 2 "" H 7400 700 50  0000 C CNN
+F 3 "" H 7400 700 50  0000 C CNN
+	1    7400 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2238,4 +2235,23 @@ F 3 "" H 2800 1250 60  0001 C CNN
 	1    2800 1250
 	1    0    0    -1  
 $EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58BD09E1
+P 5800 950
+F 0 "#PWR?" H 5800 800 50  0001 C CNN
+F 1 "+3.3V" H 5900 1050 50  0000 C CNN
+F 2 "" H 5800 950 50  0000 C CNN
+F 3 "" H 5800 950 50  0000 C CNN
+	1    5800 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1150 4250 1050
+Wire Wire Line
+	4250 1750 4250 1850
+Wire Wire Line
+	4250 1850 5150 1850
+Wire Wire Line
+	7250 700  7400 700 
 $EndSCHEMATC
