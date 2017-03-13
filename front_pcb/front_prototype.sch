@@ -466,8 +466,6 @@ SD_RST
 NoConn ~ 1200 5450
 NoConn ~ 2700 5500
 NoConn ~ 2700 5800
-NoConn ~ 2700 6950
-NoConn ~ 2700 7250
 NoConn ~ 2700 7450
 NoConn ~ 1200 6750
 NoConn ~ 1200 5800
@@ -544,7 +542,7 @@ F 3 "" H 1800 6000 60  0001 C CNN
 $EndComp
 Text GLabel 2700 6650 2    60   Input ~ 0
 SD_D1
-Text GLabel 2700 6150 2    60   Input ~ 0
+Text GLabel 2700 6950 2    60   Input ~ 0
 AUDIO_0
 Text GLabel 1050 5550 0    60   Output ~ 0
 SD_RST
@@ -842,7 +840,7 @@ Text GLabel 6750 5200 2    60   Input ~ 0
 SDA
 Text GLabel 6750 5300 2    60   Input ~ 0
 SCL
-Text GLabel 2700 7550 2    60   Input ~ 0
+Text GLabel 2700 7250 2    60   Input ~ 0
 KEYPAD_INT
 NoConn ~ 2700 7150
 Text GLabel 6750 4150 2    60   Input ~ 0
@@ -1916,4 +1914,6 @@ F 3 "" H 1300 1300 50  0000 C CNN
 	1    1300 1300
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2700 6150
+NoConn ~ 2700 7550
 $EndSCHEMATC
