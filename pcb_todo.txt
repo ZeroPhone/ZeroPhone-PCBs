@@ -18,6 +18,8 @@ New things in front board v1.0:
 	* Bigger holes in pin headers
 	* Changed the pins for the new revision - freeing up I2S/SPI1 interface
 	* Shifted ESP-12 a tad further into board outline
+	* Added revision info text, OSHW and hacker glider labels
+	
 
 Board TODOs
 	* 		Front: Add place for audio-to-ground resistors (like on Pi 3)
