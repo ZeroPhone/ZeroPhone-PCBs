@@ -29,13 +29,13 @@ Board TODOs
 	* 	fix audio jack footprint
 	* Add fiducials on back board
 	* fix back board header silkscreen
-	* 	Add OSHW logos, ZeroPhone logo (?), hacker glider, PCB release version information etc.
+	* 	Add OSHW logos, hacker glider, PCB release version information etc.
 	* Add more clarifications to the board schematics
 	* 		Move caps near mic to other layer
 	* 		Move mic/other traces with bad clearances
 	* 		Display connector: middle two pins with smaller holes?
 	* 		Additional socket for 7-pin displays
-	* 	Make keypad board prettier
+	* 		Make keypad board prettier
 	* 		Bigger holes in pin headers
 	* 		LED on ATMega Pin 13
 	* 		Shift ESP-12 further into board
