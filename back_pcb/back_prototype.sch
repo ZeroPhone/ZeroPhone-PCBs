@@ -1064,7 +1064,7 @@ ATMEGA_ADC
 Text GLabel 6600 7050 0    60   Input ~ 0
 SDA
 Text Notes 4850 7450 0    60   ~ 0
-Small headers with I2C, 3.3V,\n+5V, one GPIO and one ADC. \nCan be useful for small \nanalog and I2C sensors.
+Small headers with I2C, 3.3V,\n+5V, one GPIO, VIN and ADC. \nCan be useful for small \nanalog and I2C sensors.
 Text GLabel 950  4900 0    60   Input ~ 0
 TV_OUT
 Text GLabel 4700 5350 0    60   Input ~ 0
@@ -1098,7 +1098,7 @@ LH_GPIO_1
 Text GLabel 4700 5750 0    60   Input ~ 0
 LH_GPIO_2
 Text Notes 3150 6300 0    60   ~ 0
-Big expansion header \nwith SPI, 2 GPIOs, \nvarious voltages and \nanalog video out.\nAlso has 5V charger \ninput and 5V DC-DC out.
+Big expansion header \nwith SPI, 4 GPIOs, \nwith I2S/SPI alt f.,\n5V/3.3V and TV-OUT.
 $Comp
 L CONN_01X13 P1
 U 1 1 588AFF09
