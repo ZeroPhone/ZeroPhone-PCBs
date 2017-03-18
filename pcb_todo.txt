@@ -21,8 +21,8 @@ New things in front board v1.0:
 	* Added revision info text, MakeRiga reference, OSHW and hacker glider labels
 	* Added basic audio jack ESD protection 
 	* Modified audio jack output capacitor footprint so that 1206 would kinda fit
+	* Fixed audio jack footprint
 
-#FIX AUDIO JACK!
 #CHECK GSM AUDIO PINOUT
 #CHECK CONNECTORS - PLACEMENT 
 #CHECK CONNECTORS (?)
@@ -44,7 +44,7 @@ Board TODOs
 	* 		ground plane between SCK and MOSI on front board?
 	* 		move reset pullup to non-clean 3.3V MCU supply
 	* 		Turning the USB port around? One more footprint?
-	* 	fix audio jack footprint
+	* 		Fix audio jack footprint
 	* Add fiducials on back board
 	* 		fix back board header silkscreen
 	* 		Add OSHW logos, hacker glider, PCB release version information etc.
