@@ -18,12 +18,14 @@ New things in front board v1.0:
 	* Bigger holes in pin headers
 	* Changed the pins for the new revision - freeing up I2S/SPI1 interface
 	* Shifted ESP-12 a tad further into board outline
-	* Added revision info text, OSHW and hacker glider labels
+	* Added revision info text, MakeRiga reference, OSHW and hacker glider labels
+	* Added basic audio jack ESD protection 
+	* Modified audio jack output capacitor footprint so that 1206 would kinda fit
 
 #FIX AUDIO JACK!
-#ADD MAKERIGA REFERENCE!
 #CHECK GSM AUDIO PINOUT
-#CHECK CONNECTORS
+#CHECK CONNECTORS - PLACEMENT 
+#CHECK CONNECTORS (?)
 
 	
 New things in back board v1.0:
@@ -33,7 +35,7 @@ New things in back board v1.0:
 	Added one more USB port
 	Fixed expansion header silkscreen
 	Swapped lots of pins on expansion headers
-	
+	One layer for ground&power, one for signals
 
 
 Board TODOs
