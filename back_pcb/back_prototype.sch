@@ -2165,14 +2165,6 @@ Wire Wire Line
 Connection ~ 9550 1450
 Connection ~ 9350 1450
 Wire Wire Line
-	9850 1550 9850 1500
-Wire Wire Line
-	9850 1500 9250 1500
-Wire Wire Line
-	9250 1500 9250 1550
-Connection ~ 9250 1550
-Connection ~ 9850 1550
-Wire Wire Line
 	9900 1650 9900 1700
 Wire Wire Line
 	9900 1700 10100 1700
