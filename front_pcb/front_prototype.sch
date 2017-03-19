@@ -1114,34 +1114,34 @@ $EndComp
 $Comp
 L CONN_01X04 P5
 U 1 1 58852726
-P 4800 2750
-F 0 "P5" H 4800 3000 50  0000 C CNN
-F 1 "GSM_AUDIO" V 4900 2750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4800 2750 50  0001 C CNN
-F 3 "" H 4800 2750 50  0000 C CNN
-	1    4800 2750
-	0    -1   -1   0   
+P 4800 3650
+F 0 "P5" H 4800 3900 50  0000 C CNN
+F 1 "GSM_AUDIO" V 4900 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4800 3650 50  0001 C CNN
+F 3 "" H 4800 3650 50  0000 C CNN
+	1    4800 3650
+	0    1    1    0   
 $EndComp
 $Comp
 L TEST_1P W4
 U 1 1 58853496
-P 5450 3300
-F 0 "W4" H 5450 3570 50  0000 C CNN
-F 1 "SPK-" H 5650 3350 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5650 3300 50  0001 C CNN
-F 3 "" H 5650 3300 50  0000 C CNN
-	1    5450 3300
+P 5600 3300
+F 0 "W4" H 5500 3450 50  0000 C CNN
+F 1 "SPK-" H 5750 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5800 3300 50  0001 C CNN
+F 3 "" H 5800 3300 50  0000 C CNN
+	1    5600 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L TEST_1P W5
 U 1 1 58853589
-P 5450 2900
-F 0 "W5" H 5450 3170 50  0000 C CNN
-F 1 "SPK+" H 5250 2950 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5650 2900 50  0001 C CNN
-F 3 "" H 5650 2900 50  0000 C CNN
-	1    5450 2900
+P 5600 2900
+F 0 "W5" H 5700 3050 50  0000 C CNN
+F 1 "SPK+" H 5450 2950 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0000 C CNN
+	1    5600 2900
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1227,84 +1227,6 @@ F 3 "" H 3250 550 50  0000 C CNN
 	1    3250 550 
 	1    0    0    -1  
 $EndComp
-Connection ~ 7450 4550
-Connection ~ 7450 4950
-Wire Wire Line
-	7250 4950 7450 4950
-Wire Wire Line
-	6750 4550 7450 4550
-Wire Wire Line
-	4750 5400 4850 5400
-Wire Wire Line
-	4750 5850 4350 5850
-Wire Wire Line
-	4750 5400 4750 5850
-Wire Wire Line
-	7550 4750 7650 4750
-Wire Wire Line
-	3750 1200 3650 1200
-Wire Wire Line
-	3650 550  3650 900 
-Wire Wire Line
-	3750 800  3650 800 
-Connection ~ 8050 1950
-Connection ~ 8050 1750
-Connection ~ 7900 1950
-Connection ~ 7900 1750
-Wire Wire Line
-	3800 3300 4500 3300
-Wire Wire Line
-	4500 3300 4500 3150
-Wire Wire Line
-	4500 2900 4500 3050
-Wire Wire Line
-	3800 2900 4500 2900
-Connection ~ 1200 5250
-Connection ~ 7750 1950
-Connection ~ 7600 1950
-Connection ~ 7450 1950
-Wire Wire Line
-	7300 1950 8500 1950
-Connection ~ 7750 1750
-Connection ~ 7600 1750
-Connection ~ 7450 1750
-Wire Wire Line
-	7300 1750 8500 1750
-Wire Wire Line
-	6700 850  6700 750 
-Connection ~ 6700 850 
-Wire Wire Line
-	6600 850  6800 850 
-Connection ~ 6100 2150
-Connection ~ 6200 2150
-Wire Wire Line
-	6100 2150 6300 2150
-Wire Wire Line
-	7250 4650 7250 4950
-Wire Wire Line
-	1200 5150 1100 5150
-Wire Wire Line
-	1950 2900 1850 2900
-Connection ~ 4850 6150
-Wire Wire Line
-	4850 6050 4850 6250
-Wire Wire Line
-	1200 5250 1200 5150
-Wire Wire Line
-	6750 4650 7250 4650
-Connection ~ 1200 5150
-Wire Wire Line
-	1050 5550 1200 5550
-Connection ~ 3650 1200
-Connection ~ 3650 800 
-Wire Wire Line
-	3650 1500 3650 1100
-Wire Wire Line
-	3350 1000 3650 1000
-Wire Wire Line
-	3650 1100 3350 1100
-Wire Wire Line
-	3650 900  3350 900 
 $Comp
 L CP_Small C15
 U 1 1 5883E9C6
@@ -1316,12 +1238,6 @@ F 3 "" H 8500 1850 50  0000 C CNN
 	1    8500 1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 8200 1750
-Connection ~ 8200 1950
-Wire Wire Line
-	7900 1750 7900 1700
-Wire Wire Line
-	7900 2000 7900 1950
 $Comp
 L C_Small C17
 U 1 1 5883F958
@@ -1333,12 +1249,6 @@ F 3 "" H 4000 3100 50  0000 C CNN
 	1    4000 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 2800 4000 3000
-Connection ~ 4000 2900
-Wire Wire Line
-	4000 3200 4000 3400
-Connection ~ 4000 3300
 $Comp
 L C_Small C16
 U 1 1 588400F4
@@ -1361,30 +1271,6 @@ F 3 "" H 4000 3500 50  0000 C CNN
 	1    4000 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 3050 4650 2950
-Wire Wire Line
-	4750 3150 4750 2950
-Wire Wire Line
-	4500 3050 4650 3050
-Wire Wire Line
-	4500 3150 4750 3150
-Wire Wire Line
-	5100 2900 5450 2900
-Wire Wire Line
-	5100 2900 5100 3050
-Wire Wire Line
-	5100 3050 4950 3050
-Wire Wire Line
-	4950 3050 4950 2950
-Wire Wire Line
-	4850 2950 4850 3150
-Wire Wire Line
-	4850 3150 5100 3150
-Wire Wire Line
-	5100 3150 5100 3300
-Wire Wire Line
-	5100 3300 5450 3300
 $Comp
 L C_Small C20
 U 1 1 588416AB
@@ -1462,12 +1348,6 @@ F 3 "" H 4000 3600 50  0000 C CNN
 	1    4000 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 2800 5250 3000
-Connection ~ 5250 2900
-Wire Wire Line
-	5250 3200 5250 3400
-Connection ~ 5250 3300
 $Comp
 L C_Small C23
 U 1 1 5885C0D7
@@ -1523,12 +1403,6 @@ F 3 "" H 4300 2600 50  0000 C CNN
 	1    4300 2600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4300 2800 4300 3000
-Connection ~ 4300 2900
-Wire Wire Line
-	4300 3200 4300 3400
-Connection ~ 4300 3300
 $Comp
 L D D1
 U 1 1 5885E9B1
@@ -1562,8 +1436,6 @@ F 3 "" H 8350 1850 50  0000 C CNN
 	1    8350 1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 8350 1750
-Connection ~ 8350 1950
 $Comp
 L R_Small R16
 U 1 1 58865E6B
@@ -1577,47 +1449,25 @@ F 3 "" H 2200 2350 50  0000 C CNN
 $EndComp
 Text Notes 4150 7700 0    60   ~ 0
 The header can be used to reprogram the ATMega \nusing the serial bootloader. Also, the ADC is available \nto user (exposed on the back board).\nWith different firmwares, the UART could be used\nin custom applications too.
-Wire Notes Line
-	4000 7800 4000 6450
-Wire Notes Line
-	3400 6450 6950 6450
-Wire Notes Line
-	6950 6450 6950 6550
-Wire Notes Line
-	7950 6550 7950 4600
 Text Notes 9350 5350 0    60   ~ 0
 Keypad layer typically uses mechanical \nbuttons, but there's an I2C header for \nany button controllers one might want \nto use (like capacitative buttons).
-Wire Notes Line
-	7100 2900 7100 1500
-Wire Notes Line
-	7100 1500 11200 1500
 Text Notes 7100 1350 0    60   ~ 0
 A header with custom jumper pads is used to make sure whoever's assembling this \ncan theoretically use any of the popular graphical display breakouts with SPI, \nincluding SPI 1.3" and 0.96" OLEDs, Nokia 5110 displays, color TFT and OLEDs.\nHeader also has 2 GPIOs available for "RST" and "D/C" ("A0") signals.\nHeader is duplicated (so displays with pins on top/bottom can be connected).\n     \nI2C signals aren't available, but, as connector's pads aren't connected to anything \nby default, you can just solder two wires from SDA and SCL pads available on board.
 Text Notes 550  2050 0    60   ~ 0
 The audio part has the typical PWM filtering \ncircuitry, but also a footprint to upgrade it \nto use a buffer for PWM filtering and buffering \n(see Pi Model B+ audio schematics). \nMicrophone pin is available on the buffer addon header, too \n(but would need more hardware to make it really work)\n
-Wire Notes Line
-	500  2100 5900 2100
 Text Notes 500  3750 0    60   ~ 0
 Transistors to control keypad backlight and vibromotor (PWMable).\nVibromotor has a resistor in series to avoid possible damage\nin case the motor short-circuits (can be just jumpered).
-Wire Notes Line
-	3400 3800 3400 6450
 Text Notes 3450 5300 0    60   ~ 0
 The legendary ATMega 328P.\nIts functions here:\nReading key matrix\nTalking I2C with Pi\nWiggling INT pin\nPWMing vibromotor\nPWMing keypad backlight\nPWMing display backlight\nExposing one ADC\nReading VBAT
 Text Notes 7400 4350 0    60   ~ 0
 Crystal has a double footprint:\nyou can use typical THT crystals\nor the ones Chinese manufacturers\nput on Arduino Pro Mini boards.
-Wire Notes Line
-	7550 2900 7550 3950
-Wire Notes Line
-	7550 3950 9100 3950
-Wire Notes Line
-	9100 3950 9100 4950
 Text Notes 7300 2750 0    60   ~ 0
 ESP-12 module acting as WiFi module \n(courtesy of RPi-WiFi project, @ajlitt)
 Text Notes 7600 3700 0    60   ~ 0
 SDIO interface routing is tricky.\nIf you remake this project, \nplease ask for some SDIO \nrouting guidelines (like I \ndid), it's not hard to mess\nit up. (Pi doesn't have the \nbest SDIO pinout either.)
 Text Notes 3650 2400 0    60   ~ 0
 This is not Chtulhu. Those capacitors filter out \nthe GSM buzz you'd hear if they weren't added. \nFeel free not to solder them, you've been warned.
-Text Notes 4450 3600 0    60   ~ 0
+Text Notes 4450 2850 0    60   ~ 0
 Cthulhu fhtagn.
 Text Notes 500  4750 0    60   ~ 0
 The through-hole Pi Zero footprint. UART and I2C pins are \nbroken out on testpoints/headers, one SPI is connected to \ndisplay connector, and the ATMega is connected to I2C.\nTwo PWM channels are used for audio, two GPIOs are used \nfor display control, SDIO-capable pins are used for ESP WiFi,\none GPIO is used as ATMega interrupt and one is reserved as \nan interrupt for custom keypads. \n\nOther pins are used by the back board.
@@ -1625,12 +1475,6 @@ Text Notes 5950 3250 0    60   ~ 0
 All ATMega SPI pins are available\non headers in case you screw up\nreally, really bad.
 Text Notes 8050 4550 0    60   ~ 0
 (the Chinese crystals\nhave built-in caps)
-Wire Notes Line
-	3400 3800 5900 3800
-Wire Notes Line
-	5900 3800 5900 2100
-Wire Notes Line
-	5350 2100 5350 500 
 $Comp
 L CONN_01X07 P7
 U 1 1 58BE51BD
@@ -1674,14 +1518,6 @@ Text GLabel 4700 650  2    60   Input ~ 0
 DISPLAY_DC
 Text Notes 4300 2050 0    60   ~ 0
 Hard-wired header\nfor the 1.3 SPI OLEDs\nwith 7-pin header.\nWas added for easier\nassembly, and also \nbecause the display\nis not centered and \nlooks ugly on 8-pin \nheader.
-Wire Wire Line
-	2900 1500 3650 1500
-Connection ~ 3550 1500
-Connection ~ 2950 1500
-Connection ~ 3550 550 
-Connection ~ 2950 550 
-Wire Notes Line
-	4200 500  4200 2100
 $Comp
 L LED D2
 U 1 1 58BEBC04
@@ -1717,10 +1553,6 @@ F 3 "" H 4150 4200 50  0000 C CNN
 $EndComp
 Text GLabel 4300 4200 2    60   Input ~ 0
 ROW2
-Wire Notes Line
-	3400 3850 500  3850
-Wire Notes Line
-	3600 3800 3600 2100
 Text Notes 3500 4050 0    60   ~ 0
 ATMega debug LED \n(on pin 13, as usual)
 $Comp
@@ -1745,17 +1577,6 @@ F 3 "" H 5500 6850 50  0000 C CNN
 	1    5500 6850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5650 7150 5500 7150
-Wire Wire Line
-	5500 7150 5500 7100
-Wire Wire Line
-	5500 6600 5500 6550
-Wire Wire Line
-	5400 6550 5700 6550
-Wire Wire Line
-	5400 6550 5400 6850
-Connection ~ 5500 6550
 $Comp
 L C_Small C26
 U 1 1 58BF622D
@@ -1767,15 +1588,8 @@ F 3 "" H 5800 6550 50  0000 C CNN
 	1    5800 6550
 	0    1    1    0   
 $EndComp
-Connection ~ 5400 6850
 Text Notes 5700 7100 0    60   ~ 0
 Jumper, set to RST pin\nby default\nRST capacitor is added\nfor compliance with  \n"FTDI header" pinout\n
-Wire Wire Line
-	4600 6650 5250 6650
-Wire Wire Line
-	5250 6650 5250 6850
-Wire Wire Line
-	5250 6850 5400 6850
 NoConn ~ 6400 2150
 NoConn ~ 6500 2150
 Text GLabel 4700 550  2    60   Input ~ 0
@@ -1859,38 +1673,6 @@ F 3 "" H 9400 2000 50  0000 C CNN
 	1    9400 2000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2900 1100 2900 1500
-Wire Wire Line
-	2900 1100 3000 1100
-Wire Wire Line
-	2900 550  2900 900 
-Wire Wire Line
-	2900 900  3000 900 
-Wire Wire Line
-	2900 550  3650 550 
-Connection ~ 2900 700 
-Connection ~ 2900 1300
-Wire Wire Line
-	2600 1300 2600 1250
-Connection ~ 2600 1300
-Wire Wire Line
-	2450 1300 2450 1250
-Connection ~ 2450 1300
-Wire Wire Line
-	2400 700  2650 700 
-Wire Wire Line
-	2600 750  2600 700 
-Connection ~ 2600 700 
-Wire Wire Line
-	2450 750  2450 700 
-Connection ~ 2450 700 
-Wire Wire Line
-	2450 1050 2450 950 
-Wire Wire Line
-	2600 1050 2600 950 
-Connection ~ 2600 1000
-Connection ~ 2450 1000
 $Comp
 L ATMEGA328P-A IC1
 U 1 1 58430088
@@ -1902,8 +1684,6 @@ F 3 "" H 5750 5050 50  0000 C CNN
 	1    5750 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1300 2650 1300
 Text GLabel 2200 700  0    60   Input ~ 0
 AOUT_1
 Text GLabel 2200 1300 0    60   Input ~ 0
@@ -1982,16 +1762,236 @@ Text GLabel 3750 1750 2    60   Input ~ 0
 AOUT_1
 Text GLabel 3750 1950 2    60   Input ~ 0
 AOUT_0
-Wire Wire Line
-	1000 850  950  850 
-Wire Wire Line
-	950  850  950  900 
 Text GLabel 9200 2000 1    60   Input ~ 0
 MIC
 Text GLabel 9600 2000 1    60   Input ~ 0
 AOUT_1
 Text GLabel 10000 2000 1    60   Input ~ 0
 AOUT_0
+Text Notes 9150 4900 0    60   ~ 0
+First and last pads are removed from the footprint,\nthey are not connected, add no mechanical \nadvantage and I get more place to route tracks.
+Text Notes 10200 2150 0    60   ~ 0
+ESD protection\ndiodes. BAW99 \nare easy to find\nor even harvest\nfrom somewhere.
+Text GLabel 3850 3300 3    60   Input ~ 0
+G_MIC+
+Text GLabel 3850 2900 1    60   Input ~ 0
+G_MIC-
+Text GLabel 5550 2900 1    60   Input ~ 0
+G_SPK+
+Text GLabel 5550 3300 3    60   Input ~ 0
+G_SPK-
+Connection ~ 7450 4550
+Connection ~ 7450 4950
+Wire Wire Line
+	7250 4950 7450 4950
+Wire Wire Line
+	6750 4550 7450 4550
+Wire Wire Line
+	4750 5400 4850 5400
+Wire Wire Line
+	4750 5850 4350 5850
+Wire Wire Line
+	4750 5400 4750 5850
+Wire Wire Line
+	7550 4750 7650 4750
+Wire Wire Line
+	3750 1200 3650 1200
+Wire Wire Line
+	3650 550  3650 900 
+Wire Wire Line
+	3750 800  3650 800 
+Connection ~ 8050 1950
+Connection ~ 8050 1750
+Connection ~ 7900 1950
+Connection ~ 7900 1750
+Wire Wire Line
+	3800 3300 4500 3300
+Wire Wire Line
+	4500 3300 4500 3150
+Wire Wire Line
+	4500 2900 4500 3050
+Wire Wire Line
+	3800 2900 4500 2900
+Connection ~ 1200 5250
+Connection ~ 7750 1950
+Connection ~ 7600 1950
+Connection ~ 7450 1950
+Wire Wire Line
+	7300 1950 8500 1950
+Connection ~ 7750 1750
+Connection ~ 7600 1750
+Connection ~ 7450 1750
+Wire Wire Line
+	7300 1750 8500 1750
+Wire Wire Line
+	6700 850  6700 750 
+Connection ~ 6700 850 
+Wire Wire Line
+	6600 850  6800 850 
+Connection ~ 6100 2150
+Connection ~ 6200 2150
+Wire Wire Line
+	6100 2150 6300 2150
+Wire Wire Line
+	7250 4650 7250 4950
+Wire Wire Line
+	1200 5150 1100 5150
+Wire Wire Line
+	1950 2900 1850 2900
+Connection ~ 4850 6150
+Wire Wire Line
+	4850 6050 4850 6250
+Wire Wire Line
+	1200 5250 1200 5150
+Wire Wire Line
+	6750 4650 7250 4650
+Connection ~ 1200 5150
+Wire Wire Line
+	1050 5550 1200 5550
+Connection ~ 3650 1200
+Connection ~ 3650 800 
+Wire Wire Line
+	3650 1500 3650 1100
+Wire Wire Line
+	3350 1000 3650 1000
+Wire Wire Line
+	3650 1100 3350 1100
+Wire Wire Line
+	3650 900  3350 900 
+Connection ~ 8200 1750
+Connection ~ 8200 1950
+Wire Wire Line
+	7900 1750 7900 1700
+Wire Wire Line
+	7900 2000 7900 1950
+Wire Wire Line
+	4000 2800 4000 3000
+Connection ~ 4000 2900
+Wire Wire Line
+	4000 3200 4000 3400
+Connection ~ 4000 3300
+Wire Wire Line
+	4500 3050 4750 3050
+Wire Wire Line
+	5100 2900 5600 2900
+Wire Wire Line
+	5100 3050 5100 2900
+Wire Wire Line
+	4850 3050 5100 3050
+Wire Wire Line
+	5100 3150 5100 3300
+Wire Wire Line
+	5100 3300 5600 3300
+Wire Wire Line
+	5250 2800 5250 3000
+Connection ~ 5250 2900
+Wire Wire Line
+	5250 3200 5250 3400
+Connection ~ 5250 3300
+Wire Wire Line
+	4300 2800 4300 3000
+Connection ~ 4300 2900
+Wire Wire Line
+	4300 3200 4300 3400
+Connection ~ 4300 3300
+Connection ~ 8350 1750
+Connection ~ 8350 1950
+Wire Notes Line
+	4000 7800 4000 6450
+Wire Notes Line
+	3400 6450 6950 6450
+Wire Notes Line
+	6950 6450 6950 6550
+Wire Notes Line
+	7950 6550 7950 4600
+Wire Notes Line
+	7100 2900 7100 1500
+Wire Notes Line
+	7100 1500 11200 1500
+Wire Notes Line
+	500  2100 5900 2100
+Wire Notes Line
+	3400 3800 3400 6450
+Wire Notes Line
+	7550 2900 7550 3950
+Wire Notes Line
+	7550 3950 9100 3950
+Wire Notes Line
+	9100 3950 9100 4950
+Wire Notes Line
+	3400 3800 5900 3800
+Wire Notes Line
+	5900 3800 5900 2100
+Wire Notes Line
+	5350 2100 5350 500 
+Wire Wire Line
+	2900 1500 3650 1500
+Connection ~ 3550 1500
+Connection ~ 2950 1500
+Connection ~ 3550 550 
+Connection ~ 2950 550 
+Wire Notes Line
+	4200 500  4200 2100
+Wire Notes Line
+	3400 3850 500  3850
+Wire Notes Line
+	3600 3800 3600 2100
+Wire Wire Line
+	5650 7150 5500 7150
+Wire Wire Line
+	5500 7150 5500 7100
+Wire Wire Line
+	5500 6600 5500 6550
+Wire Wire Line
+	5400 6550 5700 6550
+Wire Wire Line
+	5400 6550 5400 6850
+Connection ~ 5500 6550
+Connection ~ 5400 6850
+Wire Wire Line
+	4600 6650 5250 6650
+Wire Wire Line
+	5250 6650 5250 6850
+Wire Wire Line
+	5250 6850 5400 6850
+Wire Wire Line
+	2900 1100 2900 1500
+Wire Wire Line
+	2900 1100 3000 1100
+Wire Wire Line
+	2900 550  2900 900 
+Wire Wire Line
+	2900 900  3000 900 
+Wire Wire Line
+	2900 550  3650 550 
+Connection ~ 2900 700 
+Connection ~ 2900 1300
+Wire Wire Line
+	2600 1300 2600 1250
+Connection ~ 2600 1300
+Wire Wire Line
+	2450 1300 2450 1250
+Connection ~ 2450 1300
+Wire Wire Line
+	2400 700  2650 700 
+Wire Wire Line
+	2600 750  2600 700 
+Connection ~ 2600 700 
+Wire Wire Line
+	2450 750  2450 700 
+Connection ~ 2450 700 
+Wire Wire Line
+	2450 1050 2450 950 
+Wire Wire Line
+	2600 1050 2600 950 
+Connection ~ 2600 1000
+Connection ~ 2450 1000
+Wire Wire Line
+	2400 1300 2650 1300
+Wire Wire Line
+	1000 850  950  850 
+Wire Wire Line
+	950  850  950  900 
 Wire Wire Line
 	2450 1000 3000 1000
 Connection ~ 2850 1000
@@ -2003,8 +2003,6 @@ Wire Notes Line
 	7950 4600 9100 4600
 Wire Notes Line
 	9100 4950 11200 4950
-Text Notes 9150 4900 0    60   ~ 0
-First and last pads are removed from the footprint,\nthey are not connected, add no mechanical \nadvantage and I get more place to route tracks.
 Wire Wire Line
 	10550 2750 10550 2650
 Wire Wire Line
@@ -2017,6 +2015,20 @@ Wire Notes Line
 	8800 1500 8800 2500
 Wire Notes Line
 	8800 2500 11200 2500
-Text Notes 10200 2150 0    60   ~ 0
-ESD protection\ndiodes. BAW99 \nare easy to find\nor even harvest\nfrom somewhere.
+Connection ~ 5550 3300
+Connection ~ 5550 2900
+Connection ~ 3850 2900
+Connection ~ 3850 3300
+Wire Wire Line
+	5100 3150 4950 3150
+Wire Wire Line
+	4950 3150 4950 3450
+Wire Wire Line
+	4850 3050 4850 3450
+Wire Wire Line
+	4750 3050 4750 3450
+Wire Wire Line
+	4500 3150 4650 3150
+Wire Wire Line
+	4650 3150 4650 3450
 $EndSCHEMATC
