@@ -22,21 +22,23 @@ New things in front board v1.0:
 	* Added basic audio jack ESD protection 
 	* Modified audio jack output capacitor footprint so that 1206 would kinda fit
 	* Fixed audio jack footprint
+	* Adjusted GSM header pinout - to be in sync with back board
 
-#CHECK GSM AUDIO PINOUT
-#CHECK CONNECTORS - PLACEMENT 
-#CHECK CONNECTORS (?)
-
-	
 New things in back board v1.0:
-	Turned MCP23017 to 180 degrees, rearranged the GPIOs
-	Removed I2C level shifting
-	Powered MCP23017 and RGB LED from VBAT
-	Added one more USB port
-	Fixed expansion header silkscreen
-	Swapped lots of pins on expansion headers
-	One layer for ground&power, one for signals
 
+	* Turned MCP23017 to 180 degrees, rearranged its GPIOs
+	* Removed I2C level shifting
+	* Powered MCP23017 and RGB LED from VBAT
+	* Added one more USB port
+	* Fixed expansion header silkscreen
+	* Swapped lots of pins on expansion headers - for easier routing
+	* One layer for ground&power, one for signals
+	* Changed all 0603 footprints to handsoldering ones
+	* Adjusted GSM header pinout for easier routing - in sync with front board
+	* Fixed footprint holes where they'd be too tight for pin headers
+	* Added fiducials
+	* Adjusted footprint for additional protection IC
+	* Added OSHW logo, release information
 
 Board TODOs
 	* 		Front: Add place for audio-to-ground resistors (like on Pi 3)
@@ -45,10 +47,10 @@ Board TODOs
 	* 		move reset pullup to non-clean 3.3V MCU supply
 	* 		Turning the USB port around? One more footprint?
 	* 		Fix audio jack footprint
-	* Add fiducials on back board
+	* 		Add fiducials on back board
 	* 		fix back board header silkscreen
 	* 		Add OSHW logos, hacker glider, PCB release version information etc.
-	* 	Add OSHW logos, hacker glider, PCB release version information etc.
+	* 		Add OSHW logos, PCB release version information etc.
 	* 		on IR header, replace 5V with vbat
 	* 		remove/adjust I2C level shifting
 	* 		Move caps near mic to other layer
@@ -59,7 +61,7 @@ Board TODOs
 	* 		Bigger holes in pin headers
 	* 		LED on ATMega Pin 13
 	* 		Shift ESP-12 further into board
-	* Check protection footprint
+	* 		Check protection footprint
 	* 		Add GND testpoint near ATMega programming testpoints
 	* 		Remove 1 pin from ATMega programming connector
 	* 		Remove 1 pin from ATMega programming connector - back board
@@ -71,7 +73,7 @@ Board TODOs
 	* 		Fix DC-DC control not pulling FET down (P-FET, 3.3V control, 4.2V power rail)
 	* 		Power RGB LED from VBAT
 	* 		Move modem VBAT trace so that it goes through capacitor positive contact
-	* 		Swap MIC-, MIC+, SPK+ and SPK- for easier top board routing
+	* 		Swap MIC-, MIC+, SPK+ and SPK- for easier back board routing
 	* 		Front board: add fastening hole for speaker wires?
 	* 		Adjust traces to account for soldermask tolerances
 	* 		Beautify schematics
