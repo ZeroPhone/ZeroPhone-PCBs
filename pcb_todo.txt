@@ -84,6 +84,8 @@ Left for next versions
 	Footprint for smaller MCP23017?
 	Change via drill/annular ring size near pads to make rework less problematic?
 	Audio amplifier footprint?
+	UART buffer?
+	Comparators?
 	Replace RGB LED by WS2812?
 	Add diodes on keypad board
 	Switch on USB power - power USB from charger 5V input when on charger
