@@ -37,8 +37,11 @@ New things in back board v1.0:
 	* Adjusted GSM header pinout for easier routing - in sync with front board
 	* Fixed footprint holes where they'd be too tight for pin headers
 	* Added fiducials
-	* Adjusted footprint for additional protection IC
 	* Added OSHW logo, release information
+	* Added a VSYS capacitor
+	* Added a capacitor in parallel with the battery
+	* Removed the MCP_INT testpoint and testpoints for free MCP GPIOs
+	* Remove the footprint for additional protection IC
 
 Board TODOs
 	* 		Front: Add place for audio-to-ground resistors (like on Pi 3)
@@ -78,6 +81,12 @@ Board TODOs
 	* 		Adjust traces to account for soldermask tolerances
 	* 		Beautify schematics
 	* 		Replace 10uF with 100uF capacitors on schematic
+	* 		Add a VSYS capacitor
+	* 		Add a VBAT capacitor
+	* 		Move the expansion header 3.3 capacitor
+	* 		Remove the MCP_INT testpoint
+	* 		Remove the protection footprint
+	* 		Via stitch the back board?
 
 Left for next versions
 
@@ -90,3 +99,5 @@ Left for next versions
 	Add diodes on keypad board
 	Switch on USB power - power USB from charger 5V input when on charger
 	Add more clarifications to the board schematics
+	Add a big capacitor on back board VSYS, VBAT near header
+http://www.ti.com/lit/an/slva716/slva716.pdf

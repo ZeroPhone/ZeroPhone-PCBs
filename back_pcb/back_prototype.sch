@@ -61,17 +61,6 @@ F 3 "" H 950 4050 50  0000 C CNN
 	1    950  4050
 	0    -1   -1   0   
 $EndComp
-$Comp
-L TEST_1P W11
-U 1 1 5845A9D8
-P 5650 5400
-F 0 "W11" V 5650 5400 50  0001 C CNN
-F 1 "BAT_IN" V 5650 5700 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5850 5400 50  0001 C CNN
-F 3 "" H 5850 5400 50  0000 C CNN
-	1    5650 5400
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 950  5850
 $Comp
 L Pi0Top U1
@@ -894,12 +883,12 @@ There's a NC jumper to disconnect GSM modem from VBAT if needed,\nto allow using
 $Comp
 L TEST_1P W5
 U 1 1 588B5AFB
-P 4100 3650
-F 0 "W5" V 4150 3750 50  0000 C CNN
-F 1 "GND" V 4100 3900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 4300 3650 50  0001 C CNN
-F 3 "" H 4300 3650 50  0000 C CNN
-	1    4100 3650
+P 4850 4150
+F 0 "W5" V 4900 4250 50  0000 C CNN
+F 1 "GND" V 4850 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5050 4150 50  0001 C CNN
+F 3 "" H 5050 4150 50  0000 C CNN
+	1    4850 4150
 	0    -1   -1   0   
 $EndComp
 Text Notes 600  3800 0    60   ~ 0
@@ -1389,17 +1378,6 @@ F 3 "" H 4000 7050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P W28
-U 1 1 588FD363
-P 4650 4150
-F 0 "W28" H 4650 4420 50  0000 C CNN
-F 1 "TEST_1P" H 4750 4350 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 4850 4150 50  0001 C CNN
-F 3 "" H 4850 4150 50  0000 C CNN
-	1    4650 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L TEST_1P W29
 U 1 1 588F8B4F
 P 4200 4550
@@ -1415,12 +1393,12 @@ ATMEGA_ADC
 $Comp
 L GND #PWR050
 U 1 1 58901942
-P 4100 3650
-F 0 "#PWR050" H 4100 3400 50  0001 C CNN
-F 1 "GND" H 4100 3500 50  0000 C CNN
-F 2 "" H 4100 3650 50  0000 C CNN
-F 3 "" H 4100 3650 50  0000 C CNN
-	1    4100 3650
+P 4850 4150
+F 0 "#PWR050" H 4850 3900 50  0001 C CNN
+F 1 "GND" H 4850 4000 50  0000 C CNN
+F 2 "" H 4850 4150 50  0000 C CNN
+F 3 "" H 4850 4150 50  0000 C CNN
+	1    4850 4150
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 4350 2    60   Input ~ 0
@@ -1433,8 +1411,6 @@ Text GLabel 950  4800 0    60   Input ~ 0
 PI_RST
 Text GLabel 4050 4150 2    60   Input ~ 0
 PI_RST
-Text GLabel 4650 4150 2    60   Input ~ 0
-MCP_INT
 $Comp
 L CONN_01X02 P8
 U 1 1 58910875
@@ -1543,12 +1519,12 @@ DCDC_EN
 $Comp
 L +BATT #PWR056
 U 1 1 58911AF4
-P 850 7250
-F 0 "#PWR056" H 850 7100 50  0001 C CNN
-F 1 "+BATT" H 850 7450 50  0000 C CNN
-F 2 "" H 850 7250 50  0000 C CNN
-F 3 "" H 850 7250 50  0000 C CNN
-	1    850  7250
+P 1000 7250
+F 0 "#PWR056" H 1000 7100 50  0001 C CNN
+F 1 "+BATT" H 1000 7450 50  0000 C CNN
+F 2 "" H 1000 7250 50  0000 C CNN
+F 3 "" H 1000 7250 50  0000 C CNN
+	1    1000 7250
 	1    0    0    -1  
 $EndComp
 Text GLabel 6950 700  0    60   Input ~ 0
@@ -1589,12 +1565,12 @@ $EndComp
 $Comp
 L GND #PWR058
 U 1 1 589168FA
-P 850 7500
-F 0 "#PWR058" H 850 7250 50  0001 C CNN
-F 1 "GND" H 850 7350 50  0000 C CNN
-F 2 "" H 850 7500 50  0000 C CNN
-F 3 "" H 850 7500 50  0000 C CNN
-	1    850  7500
+P 1000 7500
+F 0 "#PWR058" H 1000 7250 50  0001 C CNN
+F 1 "GND" H 1000 7350 50  0000 C CNN
+F 2 "" H 1000 7500 50  0000 C CNN
+F 3 "" H 1000 7500 50  0000 C CNN
+	1    1000 7500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1899,7 +1875,6 @@ Wire Notes Line
 	7000 3500 7000 6500
 Wire Wire Line
 	5650 5400 5650 5300
-Connection ~ 5650 5400
 Connection ~ 5650 5300
 Wire Wire Line
 	7600 6200 7700 6200
@@ -1913,10 +1888,6 @@ Wire Wire Line
 	8100 6200 8100 6400
 Wire Wire Line
 	8100 6400 8300 6400
-Wire Wire Line
-	700  7250 1150 7250
-Wire Wire Line
-	700  7450 1150 7450
 Wire Wire Line
 	7250 700  7400 700 
 Wire Notes Line
@@ -2055,8 +2026,6 @@ Wire Wire Line
 Connection ~ 7950 2050
 Connection ~ 850  7250
 Connection ~ 850  7450
-Wire Wire Line
-	850  7500 850  7450
 Connection ~ 1900 7450
 Connection ~ 1900 7250
 NoConn ~ 2450 5050
@@ -2180,4 +2149,67 @@ Connection ~ 10350 1750
 Connection ~ 10150 1750
 Connection ~ 10100 1650
 Connection ~ 9900 1650
+$Comp
+L C_Small C3
+U 1 1 58D40043
+P 1350 7350
+F 0 "C3" H 1250 7450 50  0000 L CNN
+F 1 "100uF" H 1200 7300 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 1350 7350 50  0001 C CNN
+F 3 "" H 1350 7350 50  0000 C CNN
+	1    1350 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 58D40155
+P 2450 7350
+F 0 "C7" H 2350 7450 50  0000 L CNN
+F 1 "100uF" H 2300 7300 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 2450 7350 50  0001 C CNN
+F 3 "" H 2450 7350 50  0000 C CNN
+	1    2450 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR071
+U 1 1 58D40C19
+P 2450 7450
+F 0 "#PWR071" H 2450 7200 50  0001 C CNN
+F 1 "GND" H 2450 7300 50  0000 C CNN
+F 2 "" H 2450 7450 50  0000 C CNN
+F 3 "" H 2450 7450 50  0000 C CNN
+	1    2450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VPP #PWR072
+U 1 1 58D40F5D
+P 2450 7250
+F 0 "#PWR072" H 2450 7100 50  0001 C CNN
+F 1 "VPP" V 2450 7450 50  0000 C CNN
+F 2 "" H 2450 7250 50  0000 C CNN
+F 3 "" H 2450 7250 50  0000 C CNN
+	1    2450 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7500 1000 7450
+Wire Wire Line
+	700  7250 1150 7250
+Wire Wire Line
+	1150 7450 700  7450
+$Comp
+L +BATT #PWR073
+U 1 1 58D46D04
+P 1350 7250
+F 0 "#PWR073" H 1350 7100 50  0001 C CNN
+F 1 "+BATT" H 1350 7450 50  0000 C CNN
+F 2 "" H 1350 7250 50  0000 C CNN
+F 3 "" H 1350 7250 50  0000 C CNN
+	1    1350 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 7450 3    60   Input ~ 0
+BATT-
 $EndSCHEMATC
