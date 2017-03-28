@@ -1,4 +1,4 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";"Empty"
 1;"Q1,Q2";"SOT-23_BC847B_Handsoldering";2;"BC847B";;;
 2;"C1,C4,C5,C6,C7,C8,C13,C14,C25";"C_0805";9;"100nF";;;
 3;"C2,C3";"C_0805";2;"18pF";;;
