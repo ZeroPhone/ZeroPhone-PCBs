@@ -1,39 +1,42 @@
 # ZeroPhone-PCBs
 KiCad PCB files for ZeroPhone
 
-This is beta version. It was ordered in QTY 3 PCBs of each order were produced and there, not surprisingly, were numerous changes to be made. They're all listed in the TODO and are fixed in the next version. 
+This is gamma version. It's WIP and is going to be sent to production soon (as soon as last TODOs are finished). You can already order this board, but it's possible the I2C GPIO expander pin mapping is going to change. Also, before ordering, please make sure the Gerber files are recent (if they're up-to-date after latest commits concerning PCB files) and regenerate them if necessary.
 
-You can order this board, but there's a much better revision in the works and it still needs a solder jumper or two. Also, please make sure the Gerber files are right and regenerate them if necessary.
-If you do order these PCBs, don't complain. Otherwise, just wait for the new revision - it's almost ready by now and is in another branch of this repository.
+## Features added, problems fixed - compared to beta version:
 
-## Features added, problems fixed - compared to alpha version:
-
-* ESP antenna outside of the outline - should be moved
-* ESP too far from SDIO pins - moved to the middle of the board
-* Display top connector moved higher
-* Display breakout: replaced one BL with VCC for easier solder jumpers
-* Move display BL pin to ATMega
-* Moved display solder-jumpers to lower display headers
-* Added UART RX&TX testpoints
-* Fixed transistor pinouts
-* ATMega - added SMD crystal option for low profile
-* ATMega - shuffled pins for better pin capabilities
-* ATMega - connected I2C to RPi I2C
-* ATMega - made programming connections easier
-* Make pin headers that are obstructing USB?
-* Add a notification LED footprint - RGB?
-* Added MCP23017 GPIO expander
-* Added expansion sockets
-* Routed DTR, RING and RESET lines from GSM modem to expander GPIO
-* Added a footprint for a TP4056 charging module
-* Audio circuit added
-* Add an RGB LED light on the back 
-* Audio - left channel and mic mixed up
-* Audio - added holes for audio jack plastic
-* Keypad layer: bottom side footprint supporting both types of buttons
-* Keypad layer: moved bottom side buttons closer to keypad edge
-* Keypad layer: fixed footprint for two-pin front buttons
-* Keypad layer: added VCC, GND and I2C on one more header going to top right corner of keypad.
-* Keypad layer: made sure all pins are on 2.54 grid
-* Keypad layer: brought arrow keys closer
-* Fixed Pi Zero footprint (holes near headers were offset)
+* Front: Added place for audio-to-ground resistors (like on Pi 3)
+* Added fiducials on front board
+* Added ground plane between SCK and MOSI on front board
+* Added one more USB footprint, which is turned 180 degrees
+* Fixed audio jack footprint
+* Added fiducials on back board
+* Fixed back board header silkscreen
+* Added OSHW logos, hacker glider, PCB release version information etc.
+* On IR header, replaced 5V with vbat
+* Removed I2C level shifting
+* Moved GSM audio caps near mic (front board) to other layer
+* Moved traces with bad clearances
+* Display connector: changed two middle pins to have smaller drill holes
+* Added additional socket for 7-pin displays
+* Enlarged holes in pin headers
+* Added LED on ATMega [Arduino Pin 13]
+* Shifted ESP-12 further into board
+* Added GND testpoint near ATMega programming testpoints
+* Remove 1 pin from ATMega programming connector
+* Move 2- and 4-pin bottom connectors on the back board
+* Made 0603 parts more solderable
+* Back board: move traces from in between 40-pin header pins
+* Pulled MCP23017 RESET to VCC
+* Powered RGB LED from VBAT
+* Moved modem VBAT trace so that it goes through capacitor positive contact
+* Swap MIC-, MIC+, SPK+ and SPK- for easier back board routing
+* Added ESD protection diodes on audio jack pins
+* Front board: added fastening hole for speaker wires, speaker cutout
+* Adjust traces to account for soldermask tolerances
+* Beautified schematics
+* Replace 10uF with 100uF capacitors on schematic (text fix)
+* Added VSYS and VBAT capacitors
+* Moved the expansion header 3.3 capacitor
+* Removed the MCP_INT testpoint
+* Removed the protection footprint
