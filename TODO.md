@@ -4,7 +4,6 @@
 * Back board: move GSM modem to back to back
 * Back board: move charging board to front
 * Make a board for 18650 socket, with capability to be attached to ZeroPhone (mounting holes?)
-* Rethink GPIO mapping one last time?
 * Back board: make castellations/solder pads to solder charging MicroUSB port to (it already broke off one time for me)
 * Front board: center display header
 * Front board: un-hardwire 7-pin display header
@@ -17,6 +16,5 @@
 * Add diodes on keypad board
 * Switch on USB power - power USB from charger 5V input when on charger (starting with this)[http://www.ti.com/lit/an/slva716/slva716.pdf]
 * Add more clarifications to the board schematics
-* Fix the charging footprint for the new charger boards I got
 
 ![Cat picture to make it less boring](https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg)
