@@ -57,3 +57,4 @@ This is gamma version. It's WIP and is going to be sent to production soon (as s
 * Remove the footprint for additional protection IC
 * Added a footprint for MPU9050/9150 breakouts
 * Added a FET that interrupts VBAT+ and is controlled from GPIO expander (with a button to reset it?)
+* Adjusted protection footprint for protection boards I have (dirty hack, ugly and I hate it, maybe I should order another boards)
