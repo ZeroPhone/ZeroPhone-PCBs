@@ -55,3 +55,5 @@ This is gamma version. It's WIP and is going to be sent to production soon (as s
 * Added a capacitor in parallel with the battery
 * Removed the MCP_INT testpoint and testpoints for free MCP GPIOs
 * Remove the footprint for additional protection IC
+* Added a footprint for MPU9050/9150 breakouts
+* Added a FET that interrupts VBAT+ and is controlled from GPIO expander (with a button to reset it?)
