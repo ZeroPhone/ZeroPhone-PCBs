@@ -959,7 +959,7 @@ F 3 "" H 4700 6350 50  0000 C CNN
 	1    4700 6350
 	0    1    1    0   
 $EndComp
-Text GLabel 3550 5400 2    60   Input ~ 0
+Text GLabel 3050 5050 1    60   Input ~ 0
 IR_TX
 $Comp
 L CONN_01X05 P3
@@ -1563,12 +1563,12 @@ $EndComp
 $Comp
 L JUMPER JP12
 U 1 1 58C70E5F
-P 3250 5400
-F 0 "JP12" H 3250 5450 50  0000 C CNN
-F 1 "JUMPER" H 3250 5320 50  0000 C CNN
-F 2 "common-footprints:GS2_SMALL" H 3250 5400 50  0001 C CNN
-F 3 "" H 3250 5400 50  0000 C CNN
-	1    3250 5400
+P 2750 5050
+F 0 "JP12" H 2750 5100 50  0000 C CNN
+F 1 "JUMPER" H 2750 4970 50  0000 C CNN
+F 2 "common-footprints:GS2_SMALL" H 2750 5050 50  0001 C CNN
+F 3 "" H 2750 5050 50  0000 C CNN
+	1    2750 5050
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2450 6050
@@ -1866,10 +1866,6 @@ Wire Wire Line
 	2450 5150 2950 5150
 Wire Wire Line
 	2450 5250 2900 5250
-Wire Wire Line
-	2900 5250 2900 5450
-Wire Wire Line
-	2900 5400 2950 5400
 Connection ~ 3800 7250
 Wire Wire Line
 	2800 7250 3000 7250
@@ -1992,7 +1988,6 @@ Connection ~ 850  7250
 Connection ~ 850  7450
 Connection ~ 1900 7450
 Connection ~ 1900 7250
-NoConn ~ 2450 5050
 Connection ~ 1000 7250
 Connection ~ 1000 7450
 Wire Wire Line
@@ -2025,7 +2020,7 @@ F 3 "" H 5600 2700 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	2950 5100 2950 5200
-Text GLabel 2950 5100 1    60   Input ~ 0
+Text GLabel 3200 5000 2    60   Input ~ 0
 BH_GPIO_1
 $Comp
 L +5V #PWR067
@@ -2051,10 +2046,9 @@ F 3 "" H 6800 7050 50  0000 C CNN
 $EndComp
 Wire Notes Line
 	4550 7500 6950 7500
-Connection ~ 2900 5400
 Text GLabel 6600 6850 0    60   Input ~ 0
 BH_GPIO_1
-Text GLabel 2900 5450 3    60   Input ~ 0
+Text GLabel 2950 5400 2    60   Input ~ 0
 LH_GPIO_4
 Connection ~ 2950 5150
 NoConn ~ 2450 6350
@@ -2321,4 +2315,12 @@ Wire Wire Line
 	10450 2200 10450 2800
 Wire Wire Line
 	10450 2800 10750 2800
+Wire Wire Line
+	2950 5400 2900 5400
+Wire Wire Line
+	2900 5400 2900 5250
+Wire Wire Line
+	2950 5100 3200 5100
+Wire Wire Line
+	3200 5100 3200 5000
 $EndSCHEMATC

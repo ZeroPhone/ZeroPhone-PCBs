@@ -1097,9 +1097,8 @@ F 3 "" H 9000 5300 50  0000 C CNN
 $EndComp
 Text GLabel 8800 5300 1    60   Input ~ 0
 KEYPAD_GPIO
-Text GLabel 2700 6050 2    60   Input ~ 0
+Text GLabel 2700 5950 2    60   Input ~ 0
 KEYPAD_GPIO
-NoConn ~ 2700 5950
 $Comp
 L TEST_1P W12
 U 1 1 5845AF6D
@@ -2031,4 +2030,5 @@ Wire Wire Line
 	4500 3150 4650 3150
 Wire Wire Line
 	4650 3150 4650 3450
+NoConn ~ 2700 6050
 $EndSCHEMATC
