@@ -88,7 +88,7 @@ L +3.3V #PWR03
 U 1 1 5840980E
 P 6300 850
 F 0 "#PWR03" H 6300 700 50  0001 C CNN
-F 1 "+3.3V" H 6300 990 50  0000 C CNN
+F 1 "+3.3V" V 6300 1050 50  0000 C CNN
 F 2 "" H 6300 850 50  0000 C CNN
 F 3 "" H 6300 850 50  0000 C CNN
 	1    6300 850 
@@ -613,7 +613,7 @@ L SwitchableHeader-3x08 P1
 U 1 1 58438DF7
 P 6500 1550
 F 0 "P1" H 6500 1550 60  0000 C CNN
-F 1 "SwitchableHeader-3x08" H 5900 2550 60  0000 C CNN
+F 1 "SwitchableHeader-3x08" H 5600 2550 60  0000 C CNN
 F 2 "switchable_header:Pin_Header_Straight_1x08" H 6500 1550 60  0001 C CNN
 F 3 "" H 6500 1550 60  0001 C CNN
 	1    6500 1550
@@ -804,7 +804,7 @@ L +3.3V #PWR032
 U 1 1 5881300C
 P 6200 850
 F 0 "#PWR032" H 6200 700 50  0001 C CNN
-F 1 "+3.3V" H 6200 990 50  0000 C CNN
+F 1 "+3.3V" V 6200 1050 50  0000 C CNN
 F 2 "" H 6200 850 50  0000 C CNN
 F 3 "" H 6200 850 50  0000 C CNN
 	1    6200 850 
@@ -1477,46 +1477,14 @@ Text Notes 8050 4550 0    60   ~ 0
 $Comp
 L CONN_01X07 P7
 U 1 1 58BE51BD
-P 4500 850
-F 0 "P7" H 4650 1150 50  0000 C CNN
-F 1 "SPI_1.3_OLED" V 4600 850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 4500 850 50  0001 C CNN
-F 3 "" H 4500 850 50  0000 C CNN
-	1    4500 850 
-	-1   0    0    1   
+P 5250 1550
+F 0 "P7" H 5400 1850 50  0000 C CNN
+F 1 "SPI_1.3_OLED" V 5350 1550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 5250 1550 50  0001 C CNN
+F 3 "" H 5250 1550 50  0000 C CNN
+	1    5250 1550
+	-1   0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR047
-U 1 1 58BE52A4
-P 4700 1050
-F 0 "#PWR047" H 4700 900 50  0001 C CNN
-F 1 "+3.3V" V 4700 1300 50  0000 C CNN
-F 2 "" H 4700 1050 50  0000 C CNN
-F 3 "" H 4700 1050 50  0000 C CNN
-	1    4700 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR048
-U 1 1 58BE536F
-P 4700 1150
-F 0 "#PWR048" H 4700 900 50  0001 C CNN
-F 1 "GND" V 4700 900 50  0000 C CNN
-F 2 "" H 4700 1150 50  0000 C CNN
-F 3 "" H 4700 1150 50  0000 C CNN
-	1    4700 1150
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4700 950  2    60   Input ~ 0
-SCK
-Text GLabel 4700 850  2    60   Input ~ 0
-DI
-Text GLabel 4700 750  2    60   Input ~ 0
-DISPLAY_RST
-Text GLabel 4700 650  2    60   Input ~ 0
-DISPLAY_DC
-Text Notes 4300 2050 0    60   ~ 0
-Hard-wired header\nfor the 1.3 SPI OLEDs\nwith 7-pin header.\nWas added for easier\nassembly, and also \nbecause the display\nis not centered and \nlooks ugly on 8-pin \nheader.
 $Comp
 L LED D2
 U 1 1 58BEBC04
@@ -1591,8 +1559,6 @@ Text Notes 5700 7100 0    60   ~ 0
 Jumper, set to RST pin\nby default\nRST capacitor is added\nfor compliance with  \n"FTDI header" pinout\n
 NoConn ~ 6400 2150
 NoConn ~ 6500 2150
-Text GLabel 4700 550  2    60   Input ~ 0
-CS
 $Comp
 L R_Small R18
 U 1 1 58BEBAA1
@@ -1779,6 +1745,7 @@ Text GLabel 5550 2900 1    60   Input ~ 0
 G_SPK+
 Text GLabel 5550 3300 3    60   Input ~ 0
 G_SPK-
+NoConn ~ 2700 6050
 Connection ~ 7450 4550
 Connection ~ 7450 4950
 Wire Wire Line
@@ -1921,8 +1888,6 @@ Wire Notes Line
 	3400 3800 5900 3800
 Wire Notes Line
 	5900 3800 5900 2100
-Wire Notes Line
-	5350 2100 5350 500 
 Wire Wire Line
 	2900 1500 3650 1500
 Connection ~ 3550 1500
@@ -2030,5 +1995,25 @@ Wire Wire Line
 	4500 3150 4650 3150
 Wire Wire Line
 	4650 3150 4650 3450
-NoConn ~ 2700 6050
+Wire Wire Line
+	5450 1250 5800 1250
+Wire Wire Line
+	5800 1350 5450 1350
+Wire Wire Line
+	5800 1450 5450 1450
+Wire Wire Line
+	5800 1550 5450 1550
+Wire Wire Line
+	5800 1650 5450 1650
+Wire Wire Line
+	5800 1750 5450 1750
+Wire Wire Line
+	5800 1850 5450 1850
+Connection ~ 5800 1250
+Connection ~ 5800 1350
+Connection ~ 5800 1450
+Connection ~ 5800 1550
+Connection ~ 5800 1650
+Connection ~ 5800 1750
+Connection ~ 5800 1850
 $EndSCHEMATC

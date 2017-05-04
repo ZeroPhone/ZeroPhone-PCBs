@@ -36,6 +36,8 @@ This is gamma version. It's WIP and is going to be sent to production soon (as s
 * Moved fiducials so as to avoid silkscreen lines on them
 * Moved ESD diode and audio-to-ground resistors to front layer
 * Decreased ground fill clearances
+* Centered display header
+* Un-hardwired 7-pin display header
 
 ## New things in back board v1.0:
 
