@@ -1,0 +1,15 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,4.0.4-stable*%
+%TF.CreationDate,2017-05-07T06:05:31+03:00*%
+%TF.ProjectId,atmega_isp_programming,61746D6567615F6973705F70726F6772,rev?*%
+%TF.FileFunction,Legend,Bot*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 4.0.4-stable) date 05/07/17 06:05:31*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.200000*%
+G04 APERTURE END LIST*
+D10*
+M02*
