@@ -4,7 +4,6 @@
 * Back board: move GSM modem to back to back
 * Back board: move charging board to front
 * Make a board for 18650 socket, with capability to be attached to ZeroPhone (mounting holes?)
-* Back board: make castellations/solder pads to solder charging MicroUSB port to (it already broke off one time for me)
 * Footprint for smaller MCP23017?
 * Change via drill/annular ring size near pads to make rework less problematic
 * Audio amplifier footprint?
