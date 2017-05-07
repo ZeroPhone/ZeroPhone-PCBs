@@ -3,7 +3,6 @@
 * Back board: move GPIO expander to back
 * Back board: move GSM modem to back to back
 * Back board: move charging board to front
-* Make a board for 18650 socket, with capability to be attached to ZeroPhone (mounting holes?)
 * Footprint for smaller MCP23017?
 * Change via drill/annular ring size near pads to make rework less problematic
 * Audio amplifier footprint?
