@@ -12,5 +12,6 @@
 * Add diodes on keypad board
 * Switch on USB power - power USB from charger 5V input when on charger (starting with this)[http://www.ti.com/lit/an/slva716/slva716.pdf]
 * Add more clarifications to the board schematics
+* Add silkscreen + marks for polarized capacitors
 
 ![Cat picture to make it less boring](https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg)
