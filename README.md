@@ -5,7 +5,7 @@ This is gamma version. It's WIP and is going to be sent to production soon (as s
 
 ## Features added, problems fixed - compared to beta version:
 
-## New things in front board v1.0:
+## New things in "Gamma" front board:
 
 * Added 7-pin header for 1.3 SPI OLED display
 * Added trace closing the audio buffer override jumper
@@ -39,7 +39,7 @@ This is gamma version. It's WIP and is going to be sent to production soon (as s
 * Centered display header
 * Un-hardwired 7-pin display header
 
-## New things in back board v1.0:
+## New things in "Gamma" back board:
 
 * Turned MCP23017 to 180 degrees, rearranged its GPIOs
 * Removed I2C level shifting
