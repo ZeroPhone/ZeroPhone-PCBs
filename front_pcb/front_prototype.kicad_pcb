@@ -290,7 +290,7 @@
     (pad 4 thru_hole circle (at 3.25 -8.7) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask)
       (net 72 AOUT_0))
     (pad "" np_thru_hole circle (at 0 -3) (size 1.3 1.3) (drill 1.1) (layers *.Cu *.Mask))
-    (model D:/Users/z003ruax/GitHub/ZeroPhone-PCBs/front_pcb/libs/FC68125/FC68125.wrl
+    (model "${KIPRJMOD}/libs/FC68125/FC68125.wrl"
       (at (xyz -0.139764 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
