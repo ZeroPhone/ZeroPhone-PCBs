@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
     (links 0)
@@ -165,6 +165,11 @@
       (net 5 "Net-(C3-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 5 "Net-(C3-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497FCC) (tstamp 58495D44)
@@ -208,6 +213,11 @@
       (net 9 "Net-(GREEN1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 9 "Net-(GREEN1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F7A) (tstamp 58495D4C)
@@ -767,6 +777,11 @@
       (net 9 "Net-(GREEN1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 9 "Net-(GREEN1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497FD4) (tstamp 58495DD8)
@@ -810,6 +825,11 @@
       (net 9 "Net-(GREEN1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 9 "Net-(GREEN1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 588660D5) (tstamp 58495DF1)
@@ -853,6 +873,11 @@
       (net 2 "Net-(C1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85 180) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 2 "Net-(C1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:SW_SPST_EVQPE1 (layer F.Cu) (tedit 588660EF) (tstamp 58866224)
