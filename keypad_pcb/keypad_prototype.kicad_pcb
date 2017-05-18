@@ -261,6 +261,11 @@
       (net 8 "Net-(C5-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 8 "Net-(C5-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 5849806F) (tstamp 58495D54)
@@ -304,6 +309,11 @@
       (net 10 "Net-(N*1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 10 "Net-(N*1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F7F) (tstamp 58495D5C)
@@ -347,6 +357,11 @@
       (net 8 "Net-(C5-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 8 "Net-(C5-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F47) (tstamp 58495D64)
@@ -390,6 +405,11 @@
       (net 5 "Net-(C3-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 5 "Net-(C3-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F51) (tstamp 58495D6C)
@@ -433,6 +453,11 @@
       (net 11 "Net-(N2-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(N2-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497FE3) (tstamp 58495D74)
@@ -476,6 +501,11 @@
       (net 5 "Net-(C3-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 5 "Net-(C3-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F63) (tstamp 58495D7C)
@@ -519,6 +549,11 @@
       (net 11 "Net-(N2-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(N2-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F68) (tstamp 58495D84)
@@ -562,6 +597,11 @@
       (net 11 "Net-(N2-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(N2-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F6C) (tstamp 58495D8C)
@@ -605,6 +645,11 @@
       (net 11 "Net-(N2-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(N2-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 5849806A) (tstamp 58495D94)
@@ -648,6 +693,11 @@
       (net 10 "Net-(N*1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 10 "Net-(N*1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F71) (tstamp 58495D9C)
@@ -691,6 +741,11 @@
       (net 11 "Net-(N2-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(N2-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58497F75) (tstamp 58495DA4)
@@ -734,6 +789,11 @@
       (net 10 "Net-(N*1-Pad2)"))
     (pad 2 smd rect (at 3.1 1.85) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask)
       (net 10 "Net-(N*1-Pad2)"))
+    (model ${KIPRJMOD}/libs/SKQG/AB2_PB_MOM_5.2MM_SMD.x3d
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 584980A0) (tstamp 58495DAC)
