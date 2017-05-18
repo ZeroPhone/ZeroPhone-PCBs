@@ -4,13 +4,13 @@ DEF STL_object Transform {
   children [
     Shape {
       appearance Appearance {
-        material DEF New_Material Material {
-          diffuseColor 1.0 1.0 1.0
-          emissiveColor 0.0 0.0 0.0
-          specularColor 0.0 0.0 0.0
-          ambientIntensity 1.0
-          transparency 0.0
-          shininess 0.0
+        material DEF IC-BODY-EPOXY-04 Material {
+          ambientIntensity 0.293
+      		diffuseColor 0.148 0.145 0.145
+      		specularColor 0.18 0.168 0.16
+      		emissiveColor 0.0 0.0 0.0
+      		transparency 0.0
+      		shininess 0.35
         }
       }
       geometry IndexedFaceSet {
@@ -183,4 +183,3 @@ DEF STL_object Transform {
     }
   ]
 }
-
