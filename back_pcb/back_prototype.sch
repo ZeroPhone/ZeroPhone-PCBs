@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:back_prototype-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -566,7 +567,7 @@ SPK-
 Text GLabel 3200 1100 2    60   Input ~ 0
 SIM800_DTR
 $Comp
-L MCP23017 U3
+L MCP23017-RESCUE-back_prototype U3
 U 1 1 5888D7F8
 P 5750 1850
 F 0 "U3" H 5400 1550 60  0000 C CNN
@@ -826,7 +827,7 @@ $EndComp
 Text GLabel 10500 1750 2    60   Input ~ 0
 SDA
 $Comp
-L USB_A P4
+L USB_A-RESCUE-back_prototype P4
 U 1 1 588A9EDA
 P 10750 3850
 F 0 "P4" H 10950 3650 50  0000 C CNN
@@ -1645,7 +1646,7 @@ F 3 "" H 2900 7200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_A P9
+L USB_A-RESCUE-back_prototype P9
 U 1 1 58C9652A
 P 10750 4600
 F 0 "P9" H 10950 4400 50  0000 C CNN
