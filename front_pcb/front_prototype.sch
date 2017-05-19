@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:front_prototype-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -859,7 +860,7 @@ F 3 "" H 7450 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST W3
+L TEST-RESCUE-front_prototype W3
 U 1 1 58826440
 P 3800 3100
 F 0 "W3" H 3800 3160 50  0000 C CNN
@@ -1486,7 +1487,7 @@ F 3 "" H 5250 1550 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-front_prototype D2
 U 1 1 58BEBC04
 P 3800 4200
 F 0 "D2" H 3800 4300 50  0000 C CNN
