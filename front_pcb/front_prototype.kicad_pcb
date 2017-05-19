@@ -359,7 +359,7 @@
     (pad 19 smd oval (at 14 -6 270) (size 2.5 1.1) (drill (offset 0.7 0)) (layers B.Cu B.Paste B.Mask))
     (pad 20 smd oval (at 14 -4 270) (size 2.5 1.1) (drill (offset 0.7 0)) (layers B.Cu B.Paste B.Mask))
     (pad 21 smd oval (at 14 -2 270) (size 2.5 1.1) (drill (offset 0.7 0)) (layers B.Cu B.Paste B.Mask))
-    (model D:/Users/z003ruax/GitHub/ZeroPhone-PCBs/front_pcb/libs/ESP8266.3dshapes/ESP-12.wrl
+    (model ${KIPRJMOD}/libs/ESP8266.3dshapes/ESP-12.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
