@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
     (links 207)
@@ -3144,6 +3144,11 @@
       (net 24 TV_OUT))
     (pad 44 thru_hole circle (at -5.08 48.26) (size 1.524 1.524) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x20_Pitch2.54mm.wrl
+      (at (xyz 0.05 -0.95 -0.0629921))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
   )
 
   (module footprints:DC-DC-BREAKOUT locked (layer B.Cu) (tedit 58CDD03C) (tstamp 58901B79)
