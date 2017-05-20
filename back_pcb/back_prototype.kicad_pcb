@@ -3,7 +3,7 @@
   (general
     (links 207)
     (no_connects 3)
-    (area 26.354761 37.8762 97.095239 142.393952)
+    (area 41.424999 39.924999 81.575001 140.075001)
     (thickness 1.6)
     (drawings 26)
     (tracks 1237)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.1)
     (user_trace_width 0.2)
     (user_trace_width 0.5)
@@ -3145,9 +3145,9 @@
     (pad 44 thru_hole circle (at -5.08 48.26) (size 1.524 1.524) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x20_Pitch2.54mm.wrl
-      (at (xyz 0.05 -0.95 -0.0629921))
+      (at (xyz 0.05 -0.95 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 90))
+      (rotate (xyz 0 0 90))
     )
   )
 
