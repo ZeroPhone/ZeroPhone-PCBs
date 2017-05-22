@@ -1,19 +1,19 @@
-pcb_w = 36.1;
-pcb_l = 32;
-pcb_h = 1.6;
+pcb_x = 36.1;
+pcb_y = 32;
+pcb_z = 1.6;
 
 corner = 2.5;
 
 // pcb with corner cutouts
-linear_extrude(pcb_h)
+linear_extrude(pcb_z)
 difference() {
-    square([pcb_w, pcb_l], false);
+    square([pcb_x, pcb_y], false);
     // bottom left corner cutout
     polygon(points=[[0, 0],[0,corner],[corner,0]]);
     // top left corner cutout
-    polygon(points=[[0, pcb_l-corner],[0,pcb_l],[corner,pcb_l]]);
+    polygon(points=[[0, pcb_y-corner],[0,pcb_y],[corner,pcb_y]]);
     // top right corner cutout
-    polygon(points=[[pcb_w-corner, pcb_l],[pcb_w,pcb_l],[pcb_w,pcb_l-corner]]);
+    polygon(points=[[pcb_x-corner, pcb_y],[pcb_x,pcb_y],[pcb_x,pcb_y-corner]]);
     // bottom right corner cutout
-    polygon(points=[[pcb_w-corner, 0],[pcb_w,corner],[pcb_w,0]]);
+    polygon(points=[[pcb_x-corner, 0],[pcb_x,corner],[pcb_x,0]]);
 }
