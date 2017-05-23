@@ -15,6 +15,7 @@ DEF STL_object Transform {
       }
       geometry IndexedFaceSet {
         normalPerVertex TRUE
+        colorPerVertex TRUE
         coord Coordinate { point [
           0.0 0.98425 0.0,
           0.0 0.98425 0.6299200093865395,
@@ -58,8 +59,10 @@ DEF STL_object Transform {
           4, 9, 16, -1,
           4, 16, 17, -1,
           4, 17, 5, -1,
+          5, 17, 7, -1,
           6, 7, 18, -1,
           6, 18, 11, -1,
+          7, 17, 19, -1,
           7, 19, 18, -1,
           8, 10, 14, -1,
           8, 12, 13, -1,
@@ -126,8 +129,10 @@ DEF STL_object Transform {
           4, 9, 16, -1,
           4, 16, 17, -1,
           4, 17, 5, -1,
+          5, 17, 7, -1,
           6, 7, 18, -1,
           6, 18, 11, -1,
+          7, 17, 19, -1,
           7, 19, 18, -1,
           8, 10, 14, -1,
           8, 12, 13, -1,
@@ -151,40 +156,58 @@ DEF STL_object Transform {
           18, 21, 23, -1,
           20, 22, 21, -1,
           21, 22, 23, -1 ]
-      }
-    },
-    Shape {
-      appearance DEF theTexture Appearance {
-        texture ImageTexture{
-          url ["screen.jpg"]
-        }
-      }
-      geometry IndexedFaceSet {
-        # location of the face on the 3D model
-        coord Coordinate { point [
-          0.3149596057653427 1.5748 1.259840018773079,  #0 lower left
-          0.3149596057653427 10.6299 1.259840018773079, #1 upper left
-          13.897609699630737 1.5748 1.259840018773079,  #2 lower right
-          13.897609699630737 10.6299 1.259840018773079  #3 upper right
-        ] }
-        # clockwise from lower left
-        coordIndex [
-          0 1 3 2
-        ]
-        # edges of the ImageTexture - same order as above
-        texCoord TextureCoordinate {
-          point [
-            0 0,  #0 lower left
-            0 1,  #1 upper left
-            1 0,  #2 lower right
-            1 1,  #3 upper right
-          ]
-        }
-        # clockwise from lower left - same order as above
-        texCoordIndex[
-          0 1 3 2
-        ]
+        color Color { color [
+          0.0 0.0 0.0,
+          0.10980392156862745 0.2901960784313726 0.4823529411764706,
+          0.8470588235294118 0.8470588235294118 0.8470588235294118,
+          1.0 1.0 1.0 ] }
+        colorIndex [
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          2, 2, 2, -1,
+          2, 2, 2, -1,
+          1, 1, 1, -1,
+          2, 2, 2, -1,
+          2, 2, 2, -1,
+          0, 0, 0, -1,
+          2, 2, 2, -1,
+          1, 1, 1, -1,
+          0, 0, 0, -1,
+          2, 2, 2, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          2, 2, 2, -1,
+          1, 1, 1, -1,
+          2, 2, 2, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1,
+          1, 1, 1, -1 ]
       }
     }
   ]
 }
+
