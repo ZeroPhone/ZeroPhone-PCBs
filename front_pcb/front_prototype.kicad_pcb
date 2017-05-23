@@ -1183,7 +1183,7 @@
     (pad 24 smd rect (at 2.64 17.78 90) (size 1.832 1.7272) (layers B.Cu B.Paste B.Mask)
       (net 53 DISPLAY_RST))
     (model ${KIPRJMOD}/libs/Display/Display.wrl
-      (at (xyz -0.11811 0.34 0.1))
+      (at (xyz -0.12641732 0.35 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
