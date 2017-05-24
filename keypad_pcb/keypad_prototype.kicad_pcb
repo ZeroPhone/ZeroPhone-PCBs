@@ -1224,6 +1224,11 @@
     (pad 3 smd rect (at -1.8 -0.725 90) (size 1.4 1.05) (layers B.Cu B.Paste B.Mask))
     (pad "" np_thru_hole circle (at 0 0.9 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 -0.9 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/libs/side_button/side_button.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:SW_SPST_EVQP7C (layer B.Cu) (tedit 58865B67) (tstamp 588662BF)
@@ -1258,6 +1263,11 @@
     (pad 3 smd rect (at -1.8 -0.725 270) (size 1.4 1.05) (layers B.Cu B.Paste B.Mask))
     (pad "" np_thru_hole circle (at 0 0.9 270) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 -0.9 270) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/libs/side_button/side_button.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:SW_SPST_EVQP7C (layer B.Cu) (tedit 58865B67) (tstamp 588662D5)
@@ -1292,6 +1302,11 @@
     (pad 3 smd rect (at -1.8 -0.725 180) (size 1.4 1.05) (layers B.Cu B.Paste B.Mask))
     (pad "" np_thru_hole circle (at 0 0.9 180) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 -0.9 180) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/libs/side_button/side_button.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:SW_SPST_EVQPE1 (layer F.Cu) (tedit 588660F9) (tstamp 588662EB)
@@ -1362,6 +1377,11 @@
     (pad 3 smd rect (at -1.8 -0.725 90) (size 1.4 1.05) (layers B.Cu B.Paste B.Mask))
     (pad "" np_thru_hole circle (at 0 0.9 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 -0.9 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/libs/side_button/side_button.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:SW_SPST_EVQP7C (layer B.Cu) (tedit 58865B67) (tstamp 58866314)
