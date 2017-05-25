@@ -1791,6 +1791,11 @@
       (net 16 +BATT))
     (pad 1 smd oval (at 0 3 180) (size 1.2 1.524) (layers B.Cu B.Paste B.Mask)
       (net 16 +BATT))
+    (model ${KIPRJMOD}/libs/APA102C/APA102C.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 270))
+    )
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer B.Cu) (tedit 58CDD1FC) (tstamp 58C82828)
