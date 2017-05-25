@@ -497,6 +497,11 @@
       (net 58 BATT+))
     (pad 2 smd rect (at 2.54 -2.54 90) (size 2 2) (layers F.Cu F.Paste F.Mask)
       (net 18 BATT-))
+    (model "${KIPRJMOD}/libs/JST_2pin_rightangle/JST_2pin_rightangle.wrl"
+      (at (xyz 0.1135 -0.0585 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 180))
+    )
   )
 
   (module Pin_Headers:Pin_Header_Angled_1x13_Pitch2.54mm (layer F.Cu) (tedit 5862ED52) (tstamp 588D2279)
