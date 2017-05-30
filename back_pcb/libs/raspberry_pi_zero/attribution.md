@@ -1,0 +1,1 @@
+"[Raspberry Pi zero](https://grabcad.com/library/raspberry-pi-zero-1)" by [Alexandre Le Falher](https://grabcad.com/alexandre.le.falher-1) is used by the [terms of GrabCAD](https://grabcad.com/terms)/ Boolean subtracted the pin headers and converted file format to .stl and .wrl

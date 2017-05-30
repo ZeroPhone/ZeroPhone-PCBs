@@ -3154,6 +3154,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
+    (model ${KIPRJMOD}/libs/raspberry_pi_zero/raspberry_pi_zero.wrl
+      (at (xyz -0.398622047 -0.9523622 0.1))
+      (scale (xyz 25.4 25.4 25.4))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module footprints:DC-DC-BREAKOUT locked (layer B.Cu) (tedit 58CDD03C) (tstamp 58901B79)
