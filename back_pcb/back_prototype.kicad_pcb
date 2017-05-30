@@ -3156,7 +3156,7 @@
     )
     (model ${KIPRJMOD}/libs/raspberry_pi_zero/raspberry_pi_zero.wrl
       (at (xyz -0.398622047 -0.9523622 0.1))
-      (scale (xyz 25.4 25.4 25.4))
+      (scale (xyz 393.7 393.7 393.7))
       (rotate (xyz 0 0 90))
     )
   )
