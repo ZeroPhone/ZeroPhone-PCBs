@@ -1,0 +1,158 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atsha204a
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATSHA204A U1
+U 1 1 5960AC0D
+P 5500 3850
+F 0 "U1" H 5300 3550 60  0000 C CNN
+F 1 "ATSHA204A" H 5350 4150 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5500 3850 60  0001 C CNN
+F 3 "" H 5500 3850 60  0001 C CNN
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5960AC6C
+P 6600 3750
+F 0 "C1" H 6625 3850 50  0000 L CNN
+F 1 "C" H 6625 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6638 3600 50  0001 C CNN
+F 3 "" H 6600 3750 50  0001 C CNN
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5960ACA9
+P 6600 3600
+F 0 "#PWR01" H 6600 3450 50  0001 C CNN
+F 1 "VCC" H 6600 3750 50  0000 C CNN
+F 2 "" H 6600 3600 50  0001 C CNN
+F 3 "" H 6600 3600 50  0001 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5960ACC1
+P 5900 3700
+F 0 "#PWR02" H 5900 3550 50  0001 C CNN
+F 1 "VCC" H 5900 3850 50  0000 C CNN
+F 2 "" H 5900 3700 50  0001 C CNN
+F 3 "" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5960ACD2
+P 5100 4000
+F 0 "#PWR03" H 5100 3750 50  0001 C CNN
+F 1 "GND" H 5100 3850 50  0000 C CNN
+F 2 "" H 5100 4000 50  0001 C CNN
+F 3 "" H 5100 4000 50  0001 C CNN
+	1    5100 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 3700
+NoConn ~ 5100 3800
+NoConn ~ 5100 3900
+NoConn ~ 5900 3800
+$Comp
+L CONN_01X05 J1
+U 1 1 5960AD02
+P 6200 4700
+F 0 "J1" H 6200 5000 50  0000 C CNN
+F 1 "EXPANSION_BOTTOM" V 6300 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 6200 4700 50  0001 C CNN
+F 3 "" H 6200 4700 50  0001 C CNN
+	1    6200 4700
+	0    1    1    0   
+$EndComp
+Text GLabel 5900 3900 2    60   Input ~ 0
+SCL
+Text GLabel 5900 4000 2    60   Input ~ 0
+SDA
+$Comp
+L GND #PWR04
+U 1 1 5960AD7D
+P 6600 3900
+F 0 "#PWR04" H 6600 3650 50  0001 C CNN
+F 1 "GND" H 6600 3750 50  0000 C CNN
+F 2 "" H 6600 3900 50  0001 C CNN
+F 3 "" H 6600 3900 50  0001 C CNN
+	1    6600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5960AD91
+P 6100 4500
+F 0 "#PWR05" H 6100 4250 50  0001 C CNN
+F 1 "GND" V 6100 4300 50  0000 C CNN
+F 2 "" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5960ADA5
+P 6000 4500
+F 0 "#PWR06" H 6000 4350 50  0001 C CNN
+F 1 "VCC" V 6000 4700 50  0000 C CNN
+F 2 "" H 6000 4500 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 4500 1    60   Input ~ 0
+SCL
+Text GLabel 6200 4500 1    60   Input ~ 0
+SDA
+NoConn ~ 6400 4500
+$EndSCHEMATC
