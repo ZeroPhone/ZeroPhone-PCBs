@@ -1540,7 +1540,7 @@
   (gr_text "If you're soldering\nSMD parts yourself,\nthis might be the\nboard to work on first. Solder\none pad of the button on, adjust \n      the button, solder the \nother pads, repeat." (at 168.4 117.8) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "1. Solder 4-pin buttons \nin the center row\n2. Solder first and third \nrows of 4-pin buttons\n3. Solder 2-pin buttons\n4. Flip the board, solder \nside buttons (you can tack \nthem on with superglue first)\n5. Solder the headers on,\nfacing downwards" (at 168.8 145.2) (layer B.SilkS)
+  (gr_text "1. Solder 4-pin buttons \nin the center row\n2. Solder first and third \nrows of 4-pin buttons\n3. Solder 2-pin buttons\n4. Flip the board, solder \nside buttons (you can tack \nthem on with superglue first)\n5. Solder the headers on,\nfacing downwards" (at 168.7 145.8) (layer B.SilkS)
     (effects (font (size 1.4 1.4) (thickness 0.3)) (justify mirror))
   )
   (gr_text "BL-\nBL+" (at 154.4 108.8) (layer B.SilkS)
