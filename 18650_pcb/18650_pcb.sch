@@ -79,8 +79,6 @@ F 3 "" V 4800 4190 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 3300 4850 3300
-Wire Wire Line
 	4300 3700 5150 3700
 Wire Wire Line
 	4300 3700 4300 3550
@@ -93,8 +91,6 @@ Wire Wire Line
 	4300 3450 4200 3450
 Connection ~ 4550 3300
 Wire Wire Line
-	4350 3950 4850 3950
-Wire Wire Line
 	4550 4350 5150 4350
 Wire Wire Line
 	5150 4350 5150 3700
@@ -104,4 +100,26 @@ Wire Wire Line
 	4350 3300 4350 3950
 Connection ~ 4550 3950
 Connection ~ 4350 3300
+Wire Wire Line
+	4300 3300 4600 3300
+$Comp
+L Fuse_Small F1
+U 1 1 59A89BD5
+P 4700 3300
+F 0 "F1" H 4700 3240 50  0000 C CNN
+F 1 "1A" H 4700 3360 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_0679H" H 4700 3300 50  0001 C CNN
+F 3 "" H 4700 3300 50  0001 C CNN
+	1    4700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3300 5100 3300
+Wire Wire Line
+	4350 3950 4550 3950
+Wire Wire Line
+	4850 3950 5100 3950
+Wire Wire Line
+	5100 3950 5100 3300
+Connection ~ 4850 3300
 $EndSCHEMATC
