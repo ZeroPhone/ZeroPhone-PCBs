@@ -1058,11 +1058,11 @@ F 3 "" H 4700 5450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 2450 6650 2    60   Input ~ 0
-LH_GPIO_2
-Text GLabel 4700 5850 0    60   Input ~ 0
-LH_GPIO_1
+PCM_DOUT
 Text GLabel 4700 5750 0    60   Input ~ 0
-LH_GPIO_2
+PCM_DIN
+Text GLabel 4700 5650 0    60   Input ~ 0
+PCM_DOUT
 Text Notes 3150 6300 0    60   ~ 0
 Big expansion header \nwith SPI, 4 GPIOs, \nwith I2S/SPI alt f.,\n5V/3.3V and TV-OUT.
 $Comp
@@ -1574,11 +1574,11 @@ F 3 "" H 2750 5050 50  0000 C CNN
 $EndComp
 NoConn ~ 2450 6050
 Text GLabel 2450 6550 2    60   Input ~ 0
-LH_GPIO_1
+PCM_DIN
 Text GLabel 2450 6250 2    60   Input ~ 0
-LH_GPIO_3
-Text GLabel 4700 5650 0    60   Input ~ 0
-LH_GPIO_3
+PCM_FS
+Text GLabel 4700 5550 0    60   Input ~ 0
+PCM_FS
 $Comp
 L CONN_01X03 P7
 U 1 1 58C840B8
@@ -2050,7 +2050,7 @@ Wire Notes Line
 Text GLabel 6600 6850 0    60   Input ~ 0
 BH_GPIO_1
 Text GLabel 2950 5400 2    60   Input ~ 0
-LH_GPIO_4
+PCM_CLK
 Connection ~ 2950 5150
 NoConn ~ 2450 6350
 Wire Notes Line
@@ -2075,8 +2075,8 @@ Wire Wire Line
 	1600 7250 2050 7250
 Wire Wire Line
 	2050 7450 1600 7450
-Text GLabel 4700 5550 0    60   Input ~ 0
-LH_GPIO_4
+Text GLabel 4700 5850 0    60   Input ~ 0
+PCM_CLK
 NoConn ~ 5150 1750
 NoConn ~ 5150 1650
 NoConn ~ 5150 1550
@@ -2274,10 +2274,6 @@ Wire Wire Line
 	2950 5400 2900 5400
 Wire Wire Line
 	2900 5400 2900 5250
-Wire Wire Line
-	2950 5100 3200 5100
-Wire Wire Line
-	3200 5100 3200 5000
 $Comp
 L JUMPER3 JP8
 U 1 1 590A25CF
@@ -2312,4 +2308,10 @@ F 3 "" H 10350 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10450 2500
+Wire Wire Line
+	3200 5000 3150 5000
+Wire Wire Line
+	3150 5000 3150 5100
+Wire Wire Line
+	3150 5100 2950 5100
 $EndSCHEMATC
