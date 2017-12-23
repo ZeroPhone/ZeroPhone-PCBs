@@ -1,1 +1,1 @@
-"[2 pin JST connector right angle](https://grabcad.com/library/2-pin-jst-connector-right-angle-1)" by [Delia Gratta](https://grabcad.com/delia.gratta) is used by the [terms of GrabCAD](https://grabcad.com/terms)/ Converted file format to .wrl
+"[2 pin JST connector right angle](https://grabcad.com/library/2-pin-jst-connector-right-angle-1)" by [Delia Gratta](https://grabcad.com/delia.gratta) is used by the terms of [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)/ Converted file format to .wrl
