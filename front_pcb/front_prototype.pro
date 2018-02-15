@@ -1,6 +1,6 @@
-update=17-May-17 21:16:31
+update=12-Dec-17 21:25:18
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -74,3 +74,4 @@ LibName32=libs/ESP8266
 LibName33=libs/switchable_header
 LibName34=keypad_overlay
 LibName35=pi0outline
+LibName36=switches
