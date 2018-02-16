@@ -258,7 +258,7 @@ U 1 1 58437BC7
 P 9400 3400
 F 0 "R5" V 9400 3250 50  0000 C CNN
 F 1 "47R" V 9400 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3400 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3400 50  0001 C CNN
 F 3 "" H 9400 3400 50  0000 C CNN
 	1    9400 3400
 	0    -1   -1   0   
@@ -269,7 +269,7 @@ U 1 1 58437F21
 P 9400 3500
 F 0 "R6" V 9400 3350 50  0000 C CNN
 F 1 "47R" V 9400 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3500 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3500 50  0001 C CNN
 F 3 "" H 9400 3500 50  0000 C CNN
 	1    9400 3500
 	0    -1   -1   0   
@@ -280,7 +280,7 @@ U 1 1 58437F83
 P 9400 3600
 F 0 "R7" V 9400 3450 50  0000 C CNN
 F 1 "47R" V 9400 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3600 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3600 50  0001 C CNN
 F 3 "" H 9400 3600 50  0000 C CNN
 	1    9400 3600
 	0    -1   -1   0   
@@ -291,7 +291,7 @@ U 1 1 58437FE2
 P 9400 3700
 F 0 "R8" V 9400 3550 50  0000 C CNN
 F 1 "47R" V 9400 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3700 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3700 50  0001 C CNN
 F 3 "" H 9400 3700 50  0000 C CNN
 	1    9400 3700
 	0    -1   -1   0   
@@ -302,7 +302,7 @@ U 1 1 58438048
 P 9400 3800
 F 0 "R9" V 9400 3650 50  0000 C CNN
 F 1 "47R" V 9400 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3800 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3800 50  0001 C CNN
 F 3 "" H 9400 3800 50  0000 C CNN
 	1    9400 3800
 	0    -1   -1   0   
@@ -370,7 +370,7 @@ U 1 1 58458587
 P 1750 3100
 F 0 "Q2" H 1800 3100 50  0001 L CNN
 F 1 "BC847B" H 1450 3300 50  0000 L CNN
-F 2 "footprints:SOT-23_BC847B_Handsoldering" H 2000 3100 50  0000 L CIN
+F 2 "common-footprints:BC847B-SOT-23_Handsoldering" H 2000 3100 50  0000 L CIN
 F 3 "" H 1750 3100 50  0000 L CNN
 	1    1750 3100
 	1    0    0    -1  
@@ -460,7 +460,7 @@ U 1 1 58449656
 P 1700 2550
 F 0 "Q1" H 1750 2550 50  0001 L CNN
 F 1 "BC847B" H 1450 2750 50  0000 L CNN
-F 2 "footprints:SOT-23_BC847B_Handsoldering" H 1900 2475 50  0000 L CIN
+F 2 "common-footprints:BC847B-SOT-23_Handsoldering" H 1900 2475 50  0000 L CIN
 F 3 "" H 1700 2550 50  0000 L CNN
 	1    1700 2550
 	1    0    0    -1  
@@ -515,7 +515,7 @@ U 1 1 584380AF
 P 9400 3900
 F 0 "R10" V 9400 3750 50  0000 C CNN
 F 1 "47R" V 9400 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 3900 50  0001 C CNN
+F 2 "common-footprints:R_0805_47R_HandSoldering" V 9330 3900 50  0001 C CNN
 F 3 "" H 9400 3900 50  0000 C CNN
 	1    9400 3900
 	0    -1   -1   0   
@@ -550,7 +550,7 @@ U 1 1 58438DF7
 P 6500 1550
 F 0 "P1" H 6500 1550 60  0000 C CNN
 F 1 "SwitchableHeader-3x08" H 5600 2550 60  0000 C CNN
-F 2 "switchable_header:Pin_Header_Straight_1x08" H 6500 1550 60  0001 C CNN
+F 2 "footprints:Pin_Header_Straight_1x08" H 6500 1550 60  0001 C CNN
 F 3 "" H 6500 1550 60  0001 C CNN
 	1    6500 1550
 	1    0    0    -1  
