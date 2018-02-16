@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# MCP23017-RESCUE-back_prototype
+# MCP23017-RESCUE-back_pcb
 #
-DEF MCP23017-RESCUE-back_prototype U 0 40 Y Y 1 F N
+DEF MCP23017-RESCUE-back_pcb U 0 40 Y Y 1 F N
 F0 "U" -350 -300 60 H V C CNN
-F1 "MCP23017-RESCUE-back_prototype" -450 750 60 H V C CNN
+F1 "MCP23017-RESCUE-back_pcb" -450 750 60 H V C CNN
 F2 "" 200 0 60 H I C CNN
 F3 "" 200 0 60 H I C CNN
 DRAW
@@ -41,11 +41,11 @@ X INTB 19 -600 -200 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# USB_A-RESCUE-back_prototype
+# USB_A-RESCUE-back_pcb
 #
-DEF USB_A-RESCUE-back_prototype P 0 40 Y Y 1 F N
+DEF USB_A-RESCUE-back_pcb P 0 40 Y Y 1 F N
 F0 "P" 200 -200 50 H V C CNN
-F1 "USB_A-RESCUE-back_prototype" -50 200 50 H V C CNN
+F1 "USB_A-RESCUE-back_pcb" -50 200 50 H V C CNN
 F2 "" -50 -100 50 V V C CNN
 F3 "" -50 -100 50 V V C CNN
 $FPLIST

@@ -1,4 +1,4 @@
-update=17-May-17 21:09:25
+update=15-Feb-18 21:47:47
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,7 +39,7 @@ LabSize=60
 version=1
 LibDir=../common_libs;libs
 [eeschema/libraries]
-LibName1=back_prototype-rescue
+LibName1=back_pcb-rescue
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -72,7 +72,6 @@ LibName30=valves
 LibName31=pi0outline
 LibName32=libs/sim800_breakout
 LibName33=libs/mcp23017
-LibName34=libs/generic_rtc
-LibName35=references
-LibName36=libs/tp4056_breakout
-LibName37=libs/dc_dc_breakout
+LibName34=references
+LibName35=libs/tp4056_breakout
+LibName36=libs/dc_dc_breakout
