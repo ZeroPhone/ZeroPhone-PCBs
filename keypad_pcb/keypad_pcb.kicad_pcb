@@ -1,7 +1,7 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 83)
+    (links 94)
     (no_connects 0)
     (area 148.424999 104.924999 188.575001 165.075001)
     (thickness 1.6)
@@ -9,7 +9,7 @@
     (tracks 405)
     (zones 0)
     (modules 32)
-    (nets 12)
+    (nets 19)
   )
 
   (page A4)
@@ -103,6 +103,13 @@
   (net 9 /COL2)
   (net 10 /COL5)
   (net 11 /COL4)
+  (net 12 "Net-(U1-Pad12)")
+  (net 13 "Net-(U1-Pad13)")
+  (net 14 "Net-(U1-Pad14)")
+  (net 15 "Net-(U1-Pad15)")
+  (net 16 "Net-(U1-Pad16)")
+  (net 17 "Net-(U1-Pad17)")
+  (net 18 "Net-(U1-Pad18)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -122,6 +129,13 @@
     (add_net /ROW3)
     (add_net /ROW4)
     (add_net /ROW5)
+    (add_net "Net-(U1-Pad12)")
+    (add_net "Net-(U1-Pad13)")
+    (add_net "Net-(U1-Pad14)")
+    (add_net "Net-(U1-Pad15)")
+    (add_net "Net-(U1-Pad16)")
+    (add_net "Net-(U1-Pad17)")
+    (add_net "Net-(U1-Pad18)")
   )
 
   (module Buttons_Switches_SMD:SW_SPST_SKQG (layer F.Cu) (tedit 58498098) (tstamp 58495D36)
