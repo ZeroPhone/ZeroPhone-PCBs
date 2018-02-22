@@ -1337,7 +1337,6 @@ F 3 "" V 10700 4950 50  0000 C CNN
 	1    10750 5050
 	0    1    1    0   
 $EndComp
-NoConn ~ 10850 5350
 $Comp
 L +5V #PWR98
 U 1 1 58C96531
@@ -1572,7 +1571,7 @@ Text GLabel 6600 4300 2    60   Input ~ 0
 VBAT_EN
 Text GLabel 6650 6200 0    60   Input ~ 0
 BAT_IN+
-Text Notes 10150 5550 0    60   ~ 0
+Text Notes 10000 5550 0    60   ~ 0
 Full-sized USB \nfemale socket
 $Comp
 L L_Small L1
@@ -2988,4 +2987,15 @@ F 3 "" H 10350 2700 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	10500 2700 10650 2700
+$Comp
+L GND #PWR?
+U 1 1 5A8EDCBB
+P 10850 5350
+F 0 "#PWR?" H 10850 5100 50  0001 C CNN
+F 1 "GND" H 10850 5200 50  0000 C CNN
+F 2 "" H 10850 5350 50  0000 C CNN
+F 3 "" H 10850 5350 50  0000 C CNN
+	1    10850 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
