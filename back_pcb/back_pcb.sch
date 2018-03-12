@@ -424,7 +424,6 @@ NoConn ~ 2450 5900
 NoConn ~ 2450 6000
 NoConn ~ 2450 6200
 NoConn ~ 2450 6500
-NoConn ~ 950  4700
 $Comp
 L GND #PWR016
 U 1 1 588811AF
@@ -765,22 +764,22 @@ F 3 "" H 9400 5400 50  0000 C CNN
 $EndComp
 Text Notes 8950 5950 0    60   ~ 0
 Header with 2 GPIOs\nfor IR receiver \nor transmitter\n(or something else)
-Text GLabel 6600 6900 0    60   Input ~ 0
+Text GLabel 6600 7000 0    60   Input ~ 0
 SCL
 $Comp
 L GND #PWR025
 U 1 1 588A4E65
-P 6600 7100
-F 0 "#PWR025" H 6600 6850 50  0001 C CNN
-F 1 "GND" V 6600 6900 50  0000 C CNN
-F 2 "" H 6600 7100 50  0000 C CNN
-F 3 "" H 6600 7100 50  0000 C CNN
-	1    6600 7100
+P 6600 7200
+F 0 "#PWR025" H 6600 6950 50  0001 C CNN
+F 1 "GND" V 6600 7000 50  0000 C CNN
+F 2 "" H 6600 7200 50  0000 C CNN
+F 3 "" H 6600 7200 50  0000 C CNN
+	1    6600 7200
 	0    1    1    0   
 $EndComp
 Text GLabel 5000 6900 2    60   Input ~ 0
 ATMEGA_ADC
-Text GLabel 6600 7000 0    60   Input ~ 0
+Text GLabel 6600 6900 0    60   Input ~ 0
 SDA
 Text Notes 4750 7450 0    60   ~ 0
 Small headers with I2C, 3.3V,\n+5V, one GPIO, VIN and ADC. \nCan be useful for small analog and I2C\nsensors, as well as a dock station port.
@@ -1194,17 +1193,17 @@ F 3 "" H 900 7250 50  0000 C CNN
 	1    900  7250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6850 1050 0    60   Input ~ 0
+Text GLabel 6600 1050 0    60   Input ~ 0
 MCP_INT
 $Comp
 L R R11
 U 1 1 58914037
-P 6850 800
-F 0 "R11" V 6930 800 50  0000 C CNN
-F 1 "10K" V 6850 800 50  0000 C CNN
-F 2 "common-footprints:R_0805_10K_HandSoldering" V 6780 800 50  0001 C CNN
-F 3 "" H 6850 800 50  0000 C CNN
-	1    6850 800 
+P 6600 800
+F 0 "R11" V 6680 800 50  0000 C CNN
+F 1 "10K" V 6600 800 50  0000 C CNN
+F 2 "common-footprints:R_0805_10K_HandSoldering" V 6530 800 50  0001 C CNN
+F 3 "" H 6600 800 50  0000 C CNN
+	1    6600 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1462,7 +1461,7 @@ F 3 "" H 6800 7000 50  0000 C CNN
 	1    6800 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 6800 0    60   Input ~ 0
+Text GLabel 6600 7100 0    60   Input ~ 0
 BH_GPIO_1
 Text GLabel 2950 5450 2    60   Input ~ 0
 PCM_CLK
@@ -1659,12 +1658,12 @@ BAT_IN-
 $Comp
 L +3.3VA #PWR062
 U 1 1 5A853C54
-P 6600 7200
-F 0 "#PWR062" H 6600 7050 50  0001 C CNN
-F 1 "+3.3VA" V 6600 7450 50  0000 C CNN
-F 2 "" H 6600 7200 50  0001 C CNN
-F 3 "" H 6600 7200 50  0001 C CNN
-	1    6600 7200
+P 6600 6800
+F 0 "#PWR062" H 6600 6650 50  0001 C CNN
+F 1 "+3.3VA" V 6600 7050 50  0000 C CNN
+F 2 "" H 6600 6800 50  0001 C CNN
+F 3 "" H 6600 6800 50  0001 C CNN
+	1    6600 6800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1681,12 +1680,12 @@ $EndComp
 $Comp
 L +3.3VA #PWR064
 U 1 1 5A856D5E
-P 6850 650
-F 0 "#PWR064" H 6850 500 50  0001 C CNN
-F 1 "+3.3VA" H 6650 750 50  0000 C CNN
-F 2 "" H 6850 650 50  0001 C CNN
-F 3 "" H 6850 650 50  0001 C CNN
-	1    6850 650 
+P 6600 650
+F 0 "#PWR064" H 6600 500 50  0001 C CNN
+F 1 "+3.3VA" H 6400 750 50  0000 C CNN
+F 2 "" H 6600 650 50  0001 C CNN
+F 3 "" H 6600 650 50  0001 C CNN
+	1    6600 650 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1803,18 +1802,14 @@ $EndComp
 $Comp
 L +3.3V #PWR073
 U 1 1 5A8624E1
-P 8600 1100
-F 0 "#PWR073" H 8600 950 50  0001 C CNN
-F 1 "+3.3V" H 8600 1250 50  0000 C CNN
-F 2 "" H 8600 1100 50  0000 C CNN
-F 3 "" H 8600 1100 50  0000 C CNN
-	1    8600 1100
-	1    0    0    -1  
+P 8650 1200
+F 0 "#PWR073" H 8650 1050 50  0001 C CNN
+F 1 "+3.3V" H 8650 1350 50  0000 C CNN
+F 2 "" H 8650 1200 50  0000 C CNN
+F 3 "" H 8650 1200 50  0000 C CNN
+	1    8650 1200
+	-1   0    0    1   
 $EndComp
-Text GLabel 8250 950  2    60   Input ~ 0
-SDA
-Text GLabel 8250 1050 2    60   Input ~ 0
-SCL
 $Comp
 L GND #PWR074
 U 1 1 5A862FAF
@@ -2727,8 +2722,6 @@ Connection ~ 1650 7450
 Wire Wire Line
 	8250 1150 8300 1150
 Wire Wire Line
-	8600 1150 8600 1100
-Wire Wire Line
 	8250 1150 8250 1250
 Connection ~ 8250 1150
 Wire Wire Line
@@ -2972,7 +2965,7 @@ Wire Wire Line
 Text Notes 8800 1350 0    60   ~ 0
 5050 RGB LED, to be used as a\nflashlight and a notification LED
 Wire Wire Line
-	6850 1050 6850 950 
+	6600 1050 6600 950 
 Wire Wire Line
 	10550 700  10550 750 
 Wire Wire Line
@@ -3028,4 +3021,40 @@ Wire Notes Line
 	10650 4750 11200 4750
 Text Notes 10000 3650 0    60   ~ 0
 A TL431-based\nvoltage reference,\nto be used by the\ncomparator.
+Text GLabel 8250 1050 2    60   Input ~ 0
+MCP_INT
+Text GLabel 950  4700 0    60   Input ~ 0
+ID_SD
+Text GLabel 8250 950  2    60   Input ~ 0
+ID_SD
+Wire Wire Line
+	8600 1150 8650 1150
+Wire Wire Line
+	8650 1150 8650 1200
+$Comp
+L R R20
+U 1 1 5AA73F34
+P 6950 800
+F 0 "R20" V 7030 800 50  0000 C CNN
+F 1 "10K" V 6950 800 50  0000 C CNN
+F 2 "common-footprints:R_0805_10K_HandSoldering" V 6880 800 50  0001 C CNN
+F 3 "" H 6950 800 50  0000 C CNN
+	1    6950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VA #PWR0110
+U 1 1 5AA7406E
+P 6950 650
+F 0 "#PWR0110" H 6950 500 50  0001 C CNN
+F 1 "+3.3VA" H 6750 750 50  0000 C CNN
+F 2 "" H 6950 650 50  0001 C CNN
+F 3 "" H 6950 650 50  0001 C CNN
+	1    6950 650 
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 1050 0    60   Input ~ 0
+ID_SD
+Wire Wire Line
+	6950 1050 6950 950 
 $EndSCHEMATC
