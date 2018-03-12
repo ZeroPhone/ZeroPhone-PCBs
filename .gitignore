@@ -20,3 +20,4 @@ _saved_*
 # *.xml
 # *.csv
 Thumbs.db
+gerbers/
