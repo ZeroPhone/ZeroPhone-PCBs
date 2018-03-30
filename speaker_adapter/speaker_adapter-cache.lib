@@ -1,0 +1,17 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# TEST_1P
+#
+DEF TEST_1P J 0 30 N N 1 F N
+F0 "J" 0 270 50 H V C CNN
+F1 "TEST_1P" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
