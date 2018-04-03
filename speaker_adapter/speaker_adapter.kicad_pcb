@@ -3,12 +3,12 @@
   (general
     (links 2)
     (no_connects 0)
-    (area 134.924999 84.924999 150.075001 91.075001)
+    (area 134.424999 83.924999 150.575001 92.075001)
     (thickness 0.8)
     (drawings 5)
-    (tracks 10)
+    (tracks 12)
     (zones 0)
-    (modules 4)
+    (modules 6)
     (nets 3)
   )
 
@@ -30,7 +30,7 @@
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user)
+    (46 B.CrtYd user hide)
     (47 F.CrtYd user)
     (48 B.Fab user hide)
     (49 F.Fab user hide)
@@ -39,7 +39,7 @@
   (setup
     (last_trace_width 0.25)
     (trace_clearance 0.2)
-    (zone_clearance 0.508)
+    (zone_clearance 0.2)
     (zone_45_only no)
     (trace_min 0.2)
     (segment_width 0.2)
@@ -107,7 +107,7 @@
     (add_net "Net-(J2-Pad1)")
   )
 
-  (module Measurement_Points:Measurement_Point_Square-SMD-Pad_Small (layer B.Cu) (tedit 5ABE33B2) (tstamp 5ABE32C5)
+  (module Measurement_Points:Measurement_Point_Square-SMD-Pad_Small (layer B.Cu) (tedit 5AC14844) (tstamp 5ABE32C5)
     (at 138 90)
     (descr "Mesurement Point, Square, SMD Pad,  1.5mm x 1.5mm,")
     (tags "Mesurement Point Square SMD Pad 1.5x1.5mm")
@@ -123,11 +123,11 @@
     (fp_line (start 1 1) (end 1 -1) (layer B.CrtYd) (width 0.05))
     (fp_line (start 1 -1) (end -1 -1) (layer B.CrtYd) (width 0.05))
     (fp_line (start -1 -1) (end -1 1) (layer B.CrtYd) (width 0.05))
-    (pad 1 smd rect (at 0 0) (size 1.5 1.5) (layers B.Cu B.Mask)
+    (pad 1 smd rect (at 0 0) (size 1.5 1.5) (layers B.Cu)
       (net 1 "Net-(J1-Pad1)"))
   )
 
-  (module Measurement_Points:Measurement_Point_Square-SMD-Pad_Small (layer B.Cu) (tedit 5ABE33BC) (tstamp 5ABE32CA)
+  (module Measurement_Points:Measurement_Point_Square-SMD-Pad_Small (layer B.Cu) (tedit 5AC1483E) (tstamp 5ABE32CA)
     (at 136 86)
     (descr "Mesurement Point, Square, SMD Pad,  1.5mm x 1.5mm,")
     (tags "Mesurement Point Square SMD Pad 1.5x1.5mm")
@@ -143,7 +143,7 @@
     (fp_line (start 1 1) (end 1 -1) (layer B.CrtYd) (width 0.05))
     (fp_line (start 1 -1) (end -1 -1) (layer B.CrtYd) (width 0.05))
     (fp_line (start -1 -1) (end -1 1) (layer B.CrtYd) (width 0.05))
-    (pad 1 smd rect (at 0 0) (size 1.5 1.5) (layers B.Cu B.Mask)
+    (pad 1 smd rect (at 0 0) (size 1.5 1.5) (layers B.Cu)
       (net 2 "Net-(J2-Pad1)"))
   )
 
@@ -181,24 +181,58 @@
       (net 2 "Net-(J2-Pad1)"))
   )
 
+  (module Measurement_Points:Measurement_Point_Round-TH_Small (layer F.Cu) (tedit 5AC1474F) (tstamp 5AC1466E)
+    (at 134.5 88)
+    (descr "Mesurement Point, Square, Trough Hole,  DM 1.5mm, Drill 0.8mm,")
+    (tags "Mesurement Point Round Trough Hole 1.5mm Drill 0.8mm")
+    (path /5AC14567)
+    (attr virtual)
+    (fp_text reference TP1 (at 0 -2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value TEST (at 0 2) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
+    (pad "" np_thru_hole circle (at 0 0) (size 1 1) (drill 1) (layers *.Cu))
+  )
+
+  (module Measurement_Points:Measurement_Point_Round-TH_Small (layer F.Cu) (tedit 5AC14751) (tstamp 5AC14672)
+    (at 150.5 88)
+    (descr "Mesurement Point, Square, Trough Hole,  DM 1.5mm, Drill 0.8mm,")
+    (tags "Mesurement Point Round Trough Hole 1.5mm Drill 0.8mm")
+    (path /5AC145AB)
+    (attr virtual)
+    (fp_text reference TP2 (at 0 -2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value TEST (at 0 2) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
+    (pad "" np_thru_hole circle (at 0 0) (size 1 1) (drill 1) (layers *.Cu))
+  )
+
   (gr_text "ZP speaker\nadapter v1.0" (at 142.75 88) (layer F.SilkS)
     (effects (font (size 0.9 0.9) (thickness 0.17)))
   )
-  (gr_line (start 150 85) (end 135 85) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 150 91) (end 150 85) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 135 91) (end 150 91) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 135 85) (end 135 91) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 150.5 84) (end 134.5 84) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 150.5 92) (end 150.5 84) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 134.5 92) (end 150.5 92) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 134.5 84) (end 134.5 92) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 136 89.250002) (end 136 87) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 138 90) (end 136.749998 90) (width 0.25) (layer B.Cu) (net 1))
   (segment (start 136.749998 90) (end 136 89.250002) (width 0.25) (layer B.Cu) (net 1))
   (via (at 136 89.250002) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
-  (segment (start 136 86) (end 137.97707 86) (width 0.25) (layer B.Cu) (net 2))
-  (segment (start 137.97707 86) (end 137.988535 86.011465) (width 0.25) (layer B.Cu) (net 2))
+  (segment (start 149 87) (end 149 90) (width 0.25) (layer F.Cu) (net 2))
+  (segment (start 144.991202 86.011465) (end 148.011465 86.011465) (width 0.25) (layer B.Cu) (net 2))
+  (segment (start 148.011465 86.011465) (end 149 87) (width 0.25) (layer B.Cu) (net 2))
+  (via (at 149 87) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (segment (start 137.988535 86.011465) (end 144.991202 86.011465) (width 0.25) (layer B.Cu) (net 2))
-  (segment (start 144.991202 86.011465) (end 148.987181 90.007444) (width 0.25) (layer B.Cu) (net 2))
   (segment (start 148.987181 90.007444) (end 148.987181 90.013186) (width 0.25) (layer B.Cu) (net 2))
-  (via (at 148.987181 90.013186) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 2))
+  (segment (start 137.97707 86) (end 137.988535 86.011465) (width 0.25) (layer B.Cu) (net 2))
+  (segment (start 136 86) (end 137.97707 86) (width 0.25) (layer B.Cu) (net 2))
 
   (zone (net 1) (net_name "Net-(J1-Pad1)") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads yes (clearance 0.2))
@@ -206,12 +240,13 @@
     (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
     (polygon
       (pts
-        (xy 135 85) (xy 149.5 85) (xy 135 90.5)
+        (xy 135 84) (xy 150 84) (xy 149.5 85) (xy 135 90.5)
       )
     )
     (filled_polygon
       (pts
-        (xy 135.375 90.250807) (xy 135.375 85.375) (xy 148.229399 85.375)
+        (xy 149.428022 84.92035) (xy 135.1 90.355117) (xy 135.1 88.531432) (xy 135.177812 88.453755) (xy 135.299861 88.159828)
+        (xy 135.300139 87.841568) (xy 135.178603 87.547428) (xy 135.1 87.468688) (xy 135.1 84.375) (xy 149.700697 84.375)
       )
     )
   )
@@ -221,12 +256,13 @@
     (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
     (polygon
       (pts
-        (xy 150 85.5) (xy 135.5 91) (xy 150 91)
+        (xy 150 85.5) (xy 135.5 91) (xy 135 92) (xy 150 92)
       )
     )
     (filled_polygon
       (pts
-        (xy 149.625 90.625) (xy 136.770601 90.625) (xy 149.625 85.749193)
+        (xy 149.9 87.468568) (xy 149.822188 87.546245) (xy 149.700139 87.840172) (xy 149.699861 88.158432) (xy 149.821397 88.452572)
+        (xy 149.9 88.531312) (xy 149.9 91.625) (xy 135.299304 91.625) (xy 135.571978 91.07965) (xy 149.9 85.644883)
       )
     )
   )
@@ -236,12 +272,12 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 136.5 85) (xy 149.5 85) (xy 145.5 86.5) (xy 136.5 86.5)
+        (xy 136.5 84) (xy 150 84) (xy 149.5 85) (xy 145.5 86.5) (xy 136.5 86.5)
       )
     )
     (filled_polygon
       (pts
-        (xy 145.47697 86.373) (xy 136.627 86.373) (xy 136.627 85.127) (xy 148.799636 85.127)
+        (xy 149.408712 84.898597) (xy 145.47697 86.373) (xy 136.627 86.373) (xy 136.627 84.127) (xy 149.79451 84.127)
       )
     )
   )
@@ -266,12 +302,12 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 139.5 89.5) (xy 148.5 89.5) (xy 148.5 91) (xy 135.5 91)
+        (xy 139.5 89.5) (xy 148.5 89.5) (xy 148.5 92) (xy 135 92) (xy 135.5 91)
       )
     )
     (filled_polygon
       (pts
-        (xy 148.373 90.873) (xy 136.200364 90.873) (xy 139.52303 89.627) (xy 148.373 89.627)
+        (xy 148.373 91.873) (xy 135.20549 91.873) (xy 135.591288 91.101403) (xy 139.52303 89.627) (xy 148.373 89.627)
       )
     )
   )
@@ -287,6 +323,72 @@
     (filled_polygon
       (pts
         (xy 149.873 89.373) (xy 148.627 89.373) (xy 148.627 86.627) (xy 149.873 86.627)
+      )
+    )
+  )
+  (zone (net 1) (net_name "Net-(J1-Pad1)") (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads yes (clearance 0.2))
+    (min_thickness 0.2)
+    (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
+    (polygon
+      (pts
+        (xy 135 88.5) (xy 150.5 88.5) (xy 150.5 92) (xy 134.5 92) (xy 134.5 88.5)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 150.046245 88.677812) (xy 150.125 88.710514) (xy 150.125 91.625) (xy 134.875 91.625) (xy 134.875 90.007444)
+        (xy 148.562181 90.007444) (xy 148.562181 90.013186) (xy 148.594532 90.175826) (xy 148.686661 90.313706) (xy 148.824541 90.405835)
+        (xy 148.987181 90.438186) (xy 149.149821 90.405835) (xy 149.287701 90.313706) (xy 149.37983 90.175826) (xy 149.412181 90.013186)
+        (xy 149.412181 90.007444) (xy 149.37983 89.844804) (xy 149.287701 89.706924) (xy 149.149821 89.614795) (xy 148.987181 89.582444)
+        (xy 148.824541 89.614795) (xy 148.686661 89.706924) (xy 148.594532 89.844804) (xy 148.562181 90.007444) (xy 134.875 90.007444)
+        (xy 134.875 88.710655) (xy 134.952572 88.678603) (xy 135.031312 88.6) (xy 149.968568 88.6)
+      )
+    )
+  )
+  (zone (net 2) (net_name "Net-(J2-Pad1)") (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads yes (clearance 0.2))
+    (min_thickness 0.2)
+    (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
+    (polygon
+      (pts
+        (xy 134.5 84) (xy 150.5 84) (xy 150.5 87.5) (xy 134.5 87.5)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 150.125 87.289345) (xy 150.047428 87.321397) (xy 149.968688 87.4) (xy 135.031432 87.4) (xy 134.953755 87.322188)
+        (xy 134.875 87.289486) (xy 134.875 84.375) (xy 150.125 84.375)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Mask) (tstamp 0) (hatch edge 0.508)
+    (connect_pads yes (clearance 0.2))
+    (min_thickness 0.2)
+    (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
+    (polygon
+      (pts
+        (xy 134.5 86) (xy 140 86) (xy 140 87.5) (xy 134.5 87.5)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 139.9 87.4) (xy 134.6 87.4) (xy 134.6 86.1) (xy 139.9 86.1)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Mask) (tstamp 0) (hatch edge 0.508)
+    (connect_pads yes (clearance 0.2))
+    (min_thickness 0.2)
+    (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.24))
+    (polygon
+      (pts
+        (xy 134.5 88.5) (xy 140 88.5) (xy 140 90) (xy 134.5 90)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 139.9 89.9) (xy 134.6 89.9) (xy 134.6 88.6) (xy 139.9 88.6)
       )
     )
   )

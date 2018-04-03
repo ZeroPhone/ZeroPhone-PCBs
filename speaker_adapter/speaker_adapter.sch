@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:speaker_adapter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -93,4 +94,28 @@ Wire Wire Line
 	3550 2650 3700 2650
 Wire Wire Line
 	3550 2900 3700 2900
+$Comp
+L TEST TP1
+U 1 1 5AC14567
+P 4750 3050
+F 0 "TP1" H 4750 3350 50  0000 C BNN
+F 1 "TEST" H 4750 3300 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4750 3050 50  0001 C CNN
+F 3 "" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 5AC145AB
+P 4950 3050
+F 0 "TP2" H 4950 3350 50  0000 C BNN
+F 1 "TEST" H 4950 3300 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4950 3050 50  0001 C CNN
+F 3 "" H 4950 3050 50  0001 C CNN
+	1    4950 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 3050
+NoConn ~ 4950 3050
 $EndSCHEMATC
