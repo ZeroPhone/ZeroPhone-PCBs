@@ -1,6 +1,6 @@
-update=12-Dec-17 21:25:18
+update=23-Apr-18 02:49:37
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -75,3 +75,4 @@ LibName33=libs/switchable_header
 LibName34=keypad_overlay
 LibName35=pi0outline
 LibName36=switches
+LibName37=libs/ti_amps
