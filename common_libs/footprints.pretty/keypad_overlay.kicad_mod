@@ -1,5 +1,5 @@
-(module keypad_overlay (layer F.Cu) (tedit 58BEB3D0)
-  (fp_text reference REF** (at 2.54 60.96) (layer F.SilkS)
+(module keypad_overlay (layer F.Cu) (tedit 5AEBE3EC)
+  (fp_text reference REF** (at 2.54 60.96) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value KEYPAD_OVERLAY (at 5.08 -2.54) (layer F.Fab)
@@ -17,8 +17,8 @@
   (fp_line (start 40 0) (end 40 57) (layer F.SilkS) (width 0.15))
   (pad 12 thru_hole oval (at 2.54 5.08) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 13 thru_hole oval (at 2.54 2.54) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
-  (pad 1 thru_hole oval (at 38.1 48.26) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
-  (pad 2 thru_hole oval (at 38.1 45.72) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
+  (pad 1 thru_hole oval (at 38.1 55.88) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 38.1 53.34) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 3 thru_hole oval (at 38.1 43.18) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 4 thru_hole oval (at 38.1 40.64) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 5 thru_hole oval (at 38.1 38.1) (size 2 1.524) (drill 1) (layers *.Cu *.Mask))
