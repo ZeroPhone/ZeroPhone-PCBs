@@ -1320,7 +1320,7 @@ Text Notes 7450 5750 0    60   ~ 0
 Crystal has a double\nfootprint: you can use\ntypical THT crystals or\nthe ones that Chinese\nmanufacturers put on\nArduino Pro Mini boards.\n(the Chinese crystals\nhave built-in caps)
 Text Notes 7650 4150 0    60   ~ 0
 ESP-12 module acting as WiFi module \n(courtesy of RPi-WiFi project, @ajlitt)
-Text Notes 8150 4900 0    60   ~ 0
+Text Notes 7900 4900 0    60   ~ 0
 SDIO interface routing is tricky.\nIf you remake this project, \nplease ask for some SDIO \nrouting guidelines (like I \ndid), it's not hard to mess\nit up. (Pi doesn't have the \nbest SDIO pinout either.)
 Text Notes 3650 2400 0    60   ~ 0
 This is not Chtulhu. Those capacitors filter out \nthe GSM buzz you'd hear if they weren't added. \nFeel free not to solder them, you've been warned.
@@ -1554,7 +1554,7 @@ Text GLabel 9850 2000 1    60   Input ~ 0
 AOUT_1
 Text GLabel 10250 2000 1    60   Input ~ 0
 AOUT_0
-Text Notes 11800 5750 0    60   ~ 0
+Text Notes 9250 4950 0    60   ~ 0
 First and last pads are removed from the footprint,\nthey are not connected, add no mechanical \nadvantage and I get more place to route tracks.
 Text Notes 10450 2150 0    60   ~ 0
 ESD protection\ndiodes. BAW99 \nare easy to find\nor even harvest\nfrom somewhere.
@@ -2536,4 +2536,5 @@ F 3 "" H 7200 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2700 5950
+Connection ~ 4350 5850
 $EndSCHEMATC
