@@ -21,3 +21,14 @@ _saved_*
 # *.csv
 Thumbs.db
 gerbers/
+
+# Archive files
+*.zip
+*.rar
+
+# Rendered schematics
+*.svg
+*.pdf
+
+# Position files for pick&placing
+*.pos
