@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# speaker_adapter-rescue_TEST
+# TEST
 #
-DEF speaker_adapter-rescue_TEST TP 0 40 N N 1 F N
+DEF TEST TP 0 40 N N 1 F N
 F0 "TP" 0 300 50 H V C BNN
-F1 "speaker_adapter-rescue_TEST" 0 250 50 H V C CNN
+F1 "TEST" 0 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -14,11 +14,11 @@ X ~ 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speaker_adapter-rescue_TEST_1P
+# TEST_1P
 #
-DEF speaker_adapter-rescue_TEST_1P J 0 30 N N 1 F N
+DEF TEST_1P J 0 30 N N 1 F N
 F0 "J" 0 270 50 H V C CNN
-F1 "speaker_adapter-rescue_TEST_1P" 0 200 50 H V C CNN
+F1 "TEST_1P" 0 200 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 DRAW

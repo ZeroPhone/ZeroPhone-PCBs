@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name keypad_pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/keypad_pcb-rescue.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name keypad_overlay)(type Legacy)(uri /home/arsenijs/ZeroPhone-PCBs/common_libs/keypad_overlay.lib)(options "")(descr ""))
+)

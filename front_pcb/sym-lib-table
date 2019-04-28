@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name front_prototype-rescue)(type Legacy)(uri ${KIPRJMOD}/front_prototype-rescue.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name 4P_RPi_AV_jack)(type Legacy)(uri ${KIPRJMOD}/libs/4P_RPi_AV_jack.lib)(options "")(descr ""))
+  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/libs/ESP8266.lib)(options "")(descr ""))
+  (lib (name switchable_header)(type Legacy)(uri ${KIPRJMOD}/libs/switchable_header.lib)(options "")(descr ""))
+  (lib (name keypad_overlay)(type Legacy)(uri /home/arsenijs/ZeroPhone-PCBs/common_libs/keypad_overlay.lib)(options "")(descr ""))
+  (lib (name pi0outline)(type Legacy)(uri /home/arsenijs/ZeroPhone-PCBs/common_libs/pi0outline.lib)(options "")(descr ""))
+  (lib (name ti_amps)(type Legacy)(uri ${KIPRJMOD}/libs/ti_amps.lib)(options "")(descr ""))
+)

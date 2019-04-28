@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name back_pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/back_pcb-rescue.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name pi0outline)(type Legacy)(uri /home/arsenijs/ZeroPhone-PCBs/common_libs/pi0outline.lib)(options "")(descr ""))
+  (lib (name sim800_breakout)(type Legacy)(uri ${KIPRJMOD}/libs/sim800_breakout.lib)(options "")(descr ""))
+  (lib (name mcp23017)(type Legacy)(uri ${KIPRJMOD}/libs/mcp23017.lib)(options "")(descr ""))
+  (lib (name tp4056_breakout)(type Legacy)(uri ${KIPRJMOD}/libs/tp4056_breakout.lib)(options "")(descr ""))
+  (lib (name dc_dc_breakout)(type Legacy)(uri ${KIPRJMOD}/libs/dc_dc_breakout.lib)(options "")(descr ""))
+)

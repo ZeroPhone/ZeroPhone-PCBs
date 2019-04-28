@@ -32,3 +32,6 @@ gerbers/
 
 # Position files for pick&placing
 *.pos
+
+# KiCad "rescue" process backup files
+rescue-backup/

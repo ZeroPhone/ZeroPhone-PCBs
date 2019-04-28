@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:speaker_adapter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -47,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TEST_1P J1
+L speaker_adapter-rescue:TEST_1P J1
 U 1 1 5ABE3154
 P 3550 2650
 F 0 "J1" V 3600 2700 50  0000 C CNN
@@ -58,7 +26,7 @@ F 3 "" H 3750 2650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J2
+L speaker_adapter-rescue:TEST_1P J2
 U 1 1 5ABE317F
 P 3550 2900
 F 0 "J2" V 3600 2950 50  0000 C CNN
@@ -69,7 +37,7 @@ F 3 "" H 3750 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J3
+L speaker_adapter-rescue:TEST_1P J3
 U 1 1 5ABE319F
 P 3700 2650
 F 0 "J3" V 3650 2700 50  0000 C CNN
@@ -80,7 +48,7 @@ F 3 "" H 3900 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J4
+L speaker_adapter-rescue:TEST_1P J4
 U 1 1 5ABE31E0
 P 3700 2900
 F 0 "J4" V 3650 2950 50  0000 C CNN
@@ -95,7 +63,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2900 3700 2900
 $Comp
-L TEST TP1
+L speaker_adapter-rescue:TEST TP1
 U 1 1 5AC14567
 P 4750 3050
 F 0 "TP1" H 4750 3350 50  0000 C BNN
@@ -106,7 +74,7 @@ F 3 "" H 4750 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST TP2
+L speaker_adapter-rescue:TEST TP2
 U 1 1 5AC145AB
 P 4950 3050
 F 0 "TP2" H 4950 3350 50  0000 C BNN

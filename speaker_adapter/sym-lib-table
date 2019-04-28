@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name speaker_adapter-rescue)(type Legacy)(uri ${KIPRJMOD}/speaker_adapter-rescue.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+)

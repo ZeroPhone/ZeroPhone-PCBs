@@ -1,11 +1,51 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 2X_Battery_Holder
+# 18650_pcb-rescue_CONN_01X02
 #
-DEF 2X_Battery_Holder BT 0 0 N Y 1 F N
+DEF 18650_pcb-rescue_CONN_01X02 J 0 40 Y N 1 F N
+F0 "J" 0 150 50 H V C CNN
+F1 "18650_pcb-rescue_CONN_01X02" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 18650_pcb-rescue_Fuse_Small
+#
+DEF 18650_pcb-rescue_Fuse_Small F 0 10 N N 1 F N
+F0 "F" 0 -60 50 H V C CNN
+F1 "18650_pcb-rescue_Fuse_Small" 0 60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SM*
+$ENDFPLIST
+DRAW
+S -50 20 50 -20 0 1 0 N
+P 2 0 1 0 -50 0 50 0 N
+X ~ 1 -100 0 50 R 50 50 1 1 P
+X ~ 2 100 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# battery_holder_2X_Battery_Holder
+#
+DEF battery_holder_2X_Battery_Holder BT 0 0 N Y 1 F N
 F0 "BT" -350 250 50 H V L CNN
-F1 "2X_Battery_Holder" -300 -300 50 H V L CNN
+F1 "battery_holder_2X_Battery_Holder" -300 -300 50 H V L CNN
 F2 "" 0 40 50 V V C CNN
 F3 "" 0 40 50 V V C CNN
 DRAW
@@ -26,46 +66,6 @@ X ~ 1 -150 200 150 D 50 50 1 1 P
 X ~ 2 150 200 150 D 50 50 1 1 P
 X ~ 3 -150 -200 150 U 50 50 1 1 P
 X ~ 4 150 -200 150 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# CONN_01X02
-#
-DEF CONN_01X02 J 0 40 Y N 1 F N
-F0 "J" 0 150 50 H V C CNN
-F1 "CONN_01X02" 100 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Pin_Header_Straight_1X*
- Pin_Header_Angled_1X*
- Socket_Strip_Straight_1X*
- Socket_Strip_Angled_1X*
-$ENDFPLIST
-DRAW
-S -50 -45 10 -55 0 1 0 N
-S -50 55 10 45 0 1 0 N
-S -50 100 50 -100 0 1 0 N
-X P1 1 -200 50 150 R 50 50 1 1 P
-X P2 2 -200 -50 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Fuse_Small
-#
-DEF Fuse_Small F 0 10 N N 1 F N
-F0 "F" 0 -60 50 H V C CNN
-F1 "Fuse_Small" 0 60 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SM*
-$ENDFPLIST
-DRAW
-S -50 20 50 -20 0 1 0 N
-P 2 0 1 0 -50 0 50 0 N
-X ~ 1 -100 0 50 R 50 50 1 1 P
-X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

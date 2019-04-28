@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 18650_pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/18650_pcb-rescue.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name battery_holder)(type Legacy)(uri ${KIPRJMOD}/libs/battery_holder.lib)(options "")(descr ""))
+)
